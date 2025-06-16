@@ -1,13 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Chivo } from "next/font/google";
+import Menu from "@components/structure/Menu/Menu";
+import SmoothScroll from "@components/structure/SmoothScroll/SmoothScroll";
+import "../styles/globals.scss";
+import "lenis/dist/lenis.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const chivo = Chivo({
+  variable: "--font-chivo",
   subsets: ["latin"],
 });
 
@@ -19,8 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body className={chivo.variable}>
+        <SmoothScroll>
+          <Menu />
+          {children}
+        </SmoothScroll>
       </body>
     </html>
   );

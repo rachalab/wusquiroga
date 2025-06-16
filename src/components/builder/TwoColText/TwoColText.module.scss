@@ -1,0 +1,9 @@
+@use '@styles/variables' as *;
+
+
+.TwoColText
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: $s1;
+}

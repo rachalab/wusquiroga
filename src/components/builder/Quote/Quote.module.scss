@@ -1,0 +1,12 @@
+@use '@styles/variables' as *;
+
+.Quote
+{
+    p
+    {
+        font-size: $font-size-1;
+        font-weight: bold ;
+        line-height: 80%;
+        letter-spacing: 0;
+    }
+}
