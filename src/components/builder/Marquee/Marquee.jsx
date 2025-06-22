@@ -45,6 +45,7 @@ export default function Marquee({ text }) {
     };
   }, []);
 
+
   return (
     <div className={styles.marquee} ref={marqueeRef}>
       <div className={styles.marqueeContainer}  ref={containerRef}>
