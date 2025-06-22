@@ -5,15 +5,18 @@ $gray-dark: #1E1E1E;
 $gray-light: #D9D9D9;
 
 
-$s1: clamp(20px, 8.3vw, 8.3vw);
-$s2: clamp(20px, 4.15vw, 4.15vw);
-$s3: clamp(10px, 2.075vw, 2.075vw);
-$s4: clamp(5px, 1.03725vw, 1.03725vw);
+$s1: clamp(40px, 5vw, 5vw);
+$s2: clamp(20px, 2.5vw, 2.5vw);
+$s3: clamp(20px, 1.25vw, 1.25vw);
+$s4: clamp(20px, .75vw, .75vw);
+$s5: clamp(10px, 0.5vw, 0.5vw);
 
 $font-size-1: clamp(20px, 14vw, 14vw);
 $font-size-2: clamp(20px, 12vw, 14vw);
-$font-size-3: clamp(20px, 8vw, 8vw);
+$font-size-3: clamp(48px, 7vw, 7vw);
+$font-size-4: clamp(24px, 3vw, 3vw);
 
 $font-size-normal:  clamp(14px, 1.5vw, 1.5vw);
-
 $font-size-small:  clamp(14px, 1.2vw, 1.2vw);
+$font-size-xs:  clamp(14px, 1.2vw, 1.2vw);
+

@@ -4,6 +4,11 @@
 .TwoColText
 {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: $s1;
+    gap: $s2;
+    @media screen and (min-width: 990px)
+    { 
+        
+        grid-template-columns: 1fr 1fr ;
+        gap: $s1;
+    }
 }

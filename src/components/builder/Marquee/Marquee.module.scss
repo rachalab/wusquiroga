@@ -1,0 +1,22 @@
+@use '@styles/variables' as *;
+
+.marquee {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  .marqueeContainer
+  {
+        opacity: 1;
+        overflow-x: hidden;
+
+        h2 {
+            display: block;
+            text-wrap: nowrap;
+            line-height: 80%;
+            text-align: left;
+            font-size: clamp(172px, 32vw, 32vw);
+            font-weight: 900;
+        }
+
+    }
+}

@@ -4,6 +4,8 @@ import SmoothScroll from "@components/structure/SmoothScroll/SmoothScroll";
 import "../styles/globals.scss";
 import "lenis/dist/lenis.css";
 
+
+
 const chivo = Chivo({
   variable: "--font-chivo",
   subsets: ["latin"],

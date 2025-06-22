@@ -1,0 +1,60 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.projects
+{
+    z-index: 80000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        height: 20vw;
+        overflow: hidden;
+        list-style: none;
+        padding: $s1 $s1 0 $s1;
+        h3{
+            font-size: $font-size-4;
+            font-weight: 400;
+            display: inline-block;
+            letter-spacing: 0;
+            margin-bottom: $s2;
+            strong{
+                margin-right: $s4;
+                font-weight: 400;
+                display: inline-block;
+                text-transform: uppercase;
+            }
+           
+        }
+        span{
+            height: 20vw;
+            display: block;
+            background-color: $black;
+        }
+        img{
+            height: 20vw;
+            display: block;
+            width: 100%;
+            object-fit: cover;
+
+        }
+        &:nth-child(3n + 1) 
+        {
+            background-color: $white;
+            h3{
+                color: $black;
+                strong {
+                    color: $blue;
+                }
+            }
+        }
+        &:nth-child(3n + 2) 
+        {
+            background-color: $gray-light;
+        }
+        &:nth-child(3n + 0) 
+        {
+            background-color: $blue;
+        }
+    }
+}

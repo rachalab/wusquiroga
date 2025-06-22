@@ -6,7 +6,16 @@
     src: url('/fonts/g_regular.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
+    font-display:block;
+}
+
+
+@font-face {
+    font-family: 'g';
+    src: url('/fonts/g_medium.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display:block;
 }
 
 @font-face {
@@ -14,9 +23,8 @@
     src: url('/fonts/g_black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
-    font-display: swap;
+    font-display:block;
 }
-
 
 
 html,
@@ -27,8 +35,11 @@ body {
   font-family: var(--font-chivo);
   color: $black;
   font-size: $font-size-normal;
-
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
+
+
 
 h1,h2,h3,h4,h5,h6,blockquote{
   font-family: 'g';
@@ -39,9 +50,7 @@ h1,h2,h3,h4,h5,h6,blockquote{
   letter-spacing: -.1vw;
 }
 
-body{
-  padding: 0 $s1;
-}
+
 
 h1{
   font-size: $font-size-1;
@@ -65,10 +74,12 @@ strong{
 
   gap: $s2;
 
-  .builder-block
-  {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
 
+}
+
+.builder-block
+{
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
 }
