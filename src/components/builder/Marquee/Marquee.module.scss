@@ -10,11 +10,11 @@
   }
   .marqueeContainer
   {
-        opacity: 1;
         overflow-x: hidden;
 
         h2 {
             display: block;
+            opacity: 0;
             text-wrap: nowrap;
             line-height: 80%;
             text-align: left;
