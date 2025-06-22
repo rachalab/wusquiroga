@@ -27,12 +27,12 @@ export default function Marquee({ text }) {
         opacity:1,
     },
         {
-      x: 0-textWidth*.65,
+      x: 0-textWidth*.9,
 
       ease: "ease",
       scrollTrigger: {
         trigger: marqueeRef.current,
-        start: "top 35%",
+        start: "top 45%",
         end: "+="+textWidth,
         scrub: true,
         pin: true
