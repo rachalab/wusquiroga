@@ -1,8 +1,8 @@
 "use client";
-import styles from "./EmbedDOC.module.scss"; // Reutilizamos los estilos existentes si son aplicables
+import styles from "./EmbedPDF.module.scss"; // Reutilizamos los estilos existentes si son aplicables
 import colorSchemas from "@styles/colorSchemas.module.scss";
 
-function EmbedDOC({ title, embed, file, cta, colorschema }) {
+function EmbedPDF({ title, embed, file, cta, colorschema }) {
   return (
     <div className={`${styles.embed} ${colorSchemas[colorschema]}`}>
       {title && <h3>{title}</h3>}
@@ -20,4 +20,4 @@ function EmbedDOC({ title, embed, file, cta, colorschema }) {
   );
 }
 
-export default EmbedDOC;
+export default EmbedPDF;

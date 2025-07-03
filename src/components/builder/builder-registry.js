@@ -17,7 +17,7 @@ import FilesList from "./FilesList/FilesList";
 
 import PhotoGallery from "./PhotoGallery/PhotoGallery";
 import PDF from "./PDF/PDF";
-import EmbedDOC from "./EmbedDOC/EmbedDOC";
+import EmbedPDF from "./EmbedPDF/EmbedPDF";
 
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
@@ -419,8 +419,8 @@ Builder.registerComponent(PDF, {
 });
 
 // PrintMedia
-Builder.registerComponent(EmbedDOC, {
-  name: "EmbedDOC",
+Builder.registerComponent(EmbedPDF, {
+  name: "EmbedPDF",
   friendlyName: "PDF (Issuu or 3rd)",
   inputs: [
     {
