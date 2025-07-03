@@ -17,11 +17,13 @@
         color: $white;
         font-size: $font-size-small;
         font-weight: 100;
+        color: var(--box-fore-color);
         strong
         {
             font-weight: 600;
             text-transform: uppercase;
             margin-right: $s4;
+            color: var(--box-fore-color);
         }
     }
 }
