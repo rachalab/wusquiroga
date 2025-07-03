@@ -360,14 +360,14 @@ Builder.registerComponent(PhotoGallery, {
       friendlyName: "Images",
       type: "array",
       subFields: [
-        { name: "line1", friendlyName: "Line 1", type: "string" },
-        { name: "line2", friendlyName: "Line 2", type: "string" },
         {
           name: "file",
           friendlyName: "Image",
           type: "file",
           allowedFileTypes: ["png", "jpg", "jpeg", "webp", "avif"],
         },
+        { name: "line1", friendlyName: "Line 1", type: "string" },
+        { name: "line2", friendlyName: "Line 2", type: "string" }
       ],
     },{name: "colorschema",
       friendlyName: "Color Schema",
