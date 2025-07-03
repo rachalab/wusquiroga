@@ -29,7 +29,7 @@
             height: 40vw;
 
             @media screen and (min-width: 900px) {
-                height: 20vw;
+                    height: 20vw;
             }
             display: block;
             background-color: $black;
@@ -49,19 +49,31 @@
         {
             background-color: $white;
             h3{
-                color: $black;
+                color: $black !important;
                 strong {
-                    color: $blue;
+                    color: $blue !important;
                 }
             }
         }
         &:nth-child(3n + 2) 
         {
             background-color: $gray-light;
+            h3{
+                color: $black !important;
+                strong {
+                    color: $blue !important;
+                }
+            }
         }
         &:nth-child(3n + 0) 
         {
             background-color: $blue;
+            h3{
+                color: $black !important;
+                strong {
+                    color: $white !important;
+                }
+            }
         }
     }
 }

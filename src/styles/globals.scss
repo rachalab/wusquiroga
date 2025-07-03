@@ -1,5 +1,12 @@
 @use './variables' as *;
 
+:root {
+  --fore-color: $black;
+  --background-color: $white;
+  --box-background-color: $blue;
+  --box-fore-color: $white;
+  
+}
 
 @font-face {
     font-family: 'g';
@@ -82,4 +89,29 @@ strong{
   margin: 0 !important;
   padding: 0 !important;
   min-height: 0 !important;
+}
+
+.rhap_rewind-button,.rhap_forward-button,  .rhap_additional-controls,.rhap_volume-controls,.rhap_current-time,.rhap_time{
+  display: none !important;
+}
+.rhap_container{
+  background: $blue !important;
+  path,fill{
+    fill: $white !important;
+
+  }
+.rhap_current-time{
+    color: $white !important;
+  }
+   .rhap_progress-indicator,.rhap_progress-filled{
+    background-color: $white !important;
+  }
+  .rhap_controls-section
+  {
+  flex:  0 0 auto;
+  }
+  .rhap_progress-section
+  {
+    flex: 1 0 0 ;
+  }
 }

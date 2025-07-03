@@ -30,7 +30,6 @@ export default async function Projects({ categoryId, organizationId }) {
     });
   }
 
-  console.log(projects);
 
   return (
     <div className="accordions-block">

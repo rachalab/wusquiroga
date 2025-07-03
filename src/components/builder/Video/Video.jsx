@@ -1,4 +1,25 @@
 "use client";
+import styles from "./Video.module.scss";
+import colorSchemas from "@styles/colorSchemas.module.scss";
+
+function getEmbedUrl(url) {
+  if (!url) return null;
+
+  const youtubeRegex =
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/;
+  const vimeoRegex = /vimeo\.com\/(\d+)/;
+
+  const youtubeMatch = url.match(youtubeRegex);
+  const vimeoMatch = url.match(vimeoRegex);
+
+  if (youtubeMatch && youtubeMatch[1]) {
+    return `https://www.youtube.com/embed/${youtubeMatch[1]}`;
+  } else if (vimeoMatch && vimeoMatch[1]) {
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}`;
+  }
+
+  return url; // return the original if not matched
+}
 
 function Video({
   title = "Video",
@@ -8,45 +29,50 @@ function Video({
   videoUrl,
   line1,
   line2,
+  orientation,
+  colorschema,
 }) {
-  return (
-    <div className="video-block" style={{ position: "relative", textAlign: "center" }}>
-      {videoCover && (
-        <div
-          className="video-cover"
-          style={{
-            backgroundImage: `url(${videoCover})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            position: "relative",
-            paddingTop: "56.25%", // 16:9 aspect ratio
-          }}
-        >
-          <div style={{ position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }}>
-            {videoUrl ? (
-              <iframe
-                src={videoUrl}
-                title={title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ width: "100%", height: "100%" }}
-              ></iframe>
-            ) : (
-              <video controls poster={videoCover} style={{ width: "100%", height: "100%" }}>
-                {videoWebm && <source src={videoWebm} type="video/webm" />}
-                {videoMp4 && <source src={videoMp4} type="video/mp4" />}
-                Tu navegador no soporta la etiqueta de video.
-              </video>
-            )}
-          </div>
-        </div>
-      )}
+  const embedUrl = getEmbedUrl(videoUrl);
 
-      <div className="video-description" style={{ backgroundColor: "#3A7BFF", color: "#fff", padding: "1rem" }}>
-        <h2 style={{ margin: 0 }}>{title}</h2>
-        <p style={{ margin: 0, fontWeight: "bold" }}>{line1}</p>
-        <p style={{ margin: 0 }}>{line2}</p>
+  return (
+    <div
+      className={
+        orientation == "horizontal"
+          ? `${styles.video} ${styles.horizontal} ${colorSchemas[colorschema]}`
+          : `${styles.video} ${styles.vertical} ${colorSchemas[colorschema]}`
+      }
+    >
+      {orientation == "horizontal" && <h3>{title}</h3>}
+      <div className={styles.videoWrapper}>
+        <div className={styles.videoFrame}>
+          {videoUrl ? (
+            <iframe
+              src={embedUrl}
+              title={title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ width: "100%", height: "100%" }}
+            ></iframe>
+          ) : (
+            <video
+              controls
+              poster={videoCover}
+              style={{ width: "100%", height: "100%" }}
+            >
+              {videoWebm && <source src={videoWebm} type="video/webm" />}
+              {videoMp4 && <source src={videoMp4} type="video/mp4" />}
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+          )}
+        </div>
+      </div>
+
+      <div className={styles.description}>
+        {orientation != "horizontal" && <h3>{title}</h3>}
+        <p>
+          <strong>{line1}</strong> {line2}
+        </p>
       </div>
     </div>
   );

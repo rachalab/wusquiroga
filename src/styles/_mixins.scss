@@ -1,13 +1,15 @@
 @use '@styles/variables' as *;
 
 @mixin box{
-    background: $blue;
-    
+
+    background-color: var(--box-background-color);
+    border: 1px solid  var(--box-border-color);
+
     h3{
        font-size: $font-size-3;
        padding: $s3;
-       border-bottom: 1px solid $white;
-       color: $white;
+       border-bottom: 1px solid var(--box-fore-color);
+       color: var(--box-fore-color);
     }
 
     p{
@@ -66,7 +68,6 @@
 {
     text-transform: uppercase;
     padding: $s4 $s3;
-    text-decoration: none;
     display: inline-block;
     text-align: center;
     font-size: $font-size-small;
@@ -78,5 +79,20 @@
           text-decoration-color: rgba(73, 124, 252,0)
 
 
+    }
+}
+
+
+@mixin link
+{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: $font-size-small;
+    text-decoration: underline;
+    text-underline-offset: 0.2em; 
+    color: $blue;
+    transition: all 0.2s ease;
+    &:hover{
+          text-decoration-color: rgba(73, 124, 252,0)
     }
 }

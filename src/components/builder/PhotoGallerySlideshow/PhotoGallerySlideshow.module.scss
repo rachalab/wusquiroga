@@ -1,0 +1,24 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.gallery{
+    @include box;
+    // La altura de la galería será establecida dinámicamente por el JS
+    // basada en la primera imagen.
+    position: relative;
+    overflow: hidden; // Oculta cualquier contenido que se desborde
+
+    .photos {
+      width: 100%;
+      height: 100%; // Toma la altura completa del contenedor padre .gallery
+      overflow: hidden; // Crucial para recortar el contenido de la imagen
+      display: flex; // Usa flexbox para manejar la imagen dentro
+
+      img {
+         width: 100%;
+         height: 100%; // Toma la altura completa del contenedor padre .photos
+         object-fit: cover; // Ajusta la imagen para cubrir el área, recortando si es necesario
+         object-position: center; // Centra la imagen dentro de su contenedor
+      }
+    }
+}

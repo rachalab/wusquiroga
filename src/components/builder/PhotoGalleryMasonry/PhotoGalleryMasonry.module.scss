@@ -1,0 +1,25 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.gallery{
+    @include box;
+    .photos
+    {
+        column-count: 2;
+        column-gap: $s2;
+        padding: $s2;
+        .image
+        {
+            break-inside: avoid;
+            margin-bottom: $s2;
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            padding: 0;
+            margin-top: $s4;
+        }
+
+    }
+}

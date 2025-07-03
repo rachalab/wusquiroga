@@ -1,27 +1,31 @@
-"use client";
+import PhotoGalleryCarrousel from "@components/builder/PhotoGalleryCarrousel/PhotoGalleryCarrousel";
+import PhotoGalleryMasonry from "@components/builder/PhotoGalleryMasonry/PhotoGalleryMasonry";
+import PhotoGallerySlideshow from "@components/builder/PhotoGallerySlideshow/PhotoGallerySlideshow"; // Import the new Slideshow component
 
-function PhotoGallery({ title, type, images }) {
+function PhotoGallery({ title, format, images, colorschema }) {
   return (
-    <div className={`photo-gallery type-${type}`}>
-      {title && <h2>{title}</h2>}
-
-      <div className="gallery-grid">
-        {images?.map((img, index) => (
-          <div className="gallery-item" key={index}>
-            {img.file && (
-              <img src={img.file} alt={img.title || `image-${index}`} />
-            )}
-            {(img.title || img.line1 || img.line2) && (
-              <div className="caption">
-                {img.title && <h3>{img.title}</h3>}
-                {img.line1 && <p>{img.line1}</p>}
-                {img.line2 && <p>{img.line2}</p>}
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
+    <>
+      {format === "carrousel" ? (
+        <PhotoGalleryCarrousel
+          title={title}
+          images={images}
+          colorschema={colorschema}
+        />
+      ) : format === "slideshow" ? ( // New condition for slideshow
+        <PhotoGallerySlideshow
+          title={title}
+          images={images}
+          colorschema={colorschema}
+        />
+      ) : (
+        // Default to Masonry if format is not "carrousel" or "slideshow"
+        <PhotoGalleryMasonry
+          title={title}
+          images={images}
+          colorschema={colorschema}
+        />
+      )}
+    </>
   );
 }
 

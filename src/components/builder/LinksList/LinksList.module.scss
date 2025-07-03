@@ -1,0 +1,26 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.links{
+    @include box;
+    
+    ul{
+        display: flex;
+        list-style: none;
+        gap: $s4;
+        color: $white;
+        font-size: $font-size-small;
+        padding: 0 $s4 0 $s4;
+        li{
+            margin:  0;
+            padding: 0;
+            a{
+                color: $white;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

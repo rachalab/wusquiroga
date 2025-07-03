@@ -1,0 +1,26 @@
+@use '@styles/variables' as *;
+
+.Triangle{
+    width: 100%;
+    height: auto;
+    position: relative;
+    color: var(--fore-color);
+    cursor: pointer;
+    div{
+        position: relative;
+        width: clamp(48px, 7vw, 7vw);
+        height: clamp(48px, 7vw, 7vw);
+        transform-origin: 50% 50%;
+        transition: rotate .25s ease-out;
+        display: flex;
+        justify-content: center;
+    }
+    span{
+        color: var(--fore-color);
+        font-family: 'g';
+        font-size: $font-size-3;
+        line-height: 110%;
+        width: 100%;
+        text-align: center;
+    }
+}

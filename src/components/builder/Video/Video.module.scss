@@ -1,0 +1,46 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.video
+{
+    @include box;
+
+    &.horizontal .videoWrapper 
+    {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        position: relative;
+    }
+
+    &.vertical .videoWrapper 
+    {
+        aspect-ratio: 9 / 16;
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+
+    }
+    .videoFrame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &.vertical{
+        display: flex;
+        flex-direction: row-reverse;
+        
+        .description p
+        {
+            border-bottom: 1px solid $white;
+        }
+    }
+
+    
+
+    .description{
+        width: 100%;
+    }
+}
