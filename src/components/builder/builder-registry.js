@@ -19,7 +19,6 @@ import PhotoGallery from "./PhotoGallery/PhotoGallery";
 import PDF from "./PDF/PDF";
 import EmbedDOC from "./EmbedDOC/EmbedDOC";
 
-// Inicializar Builder
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 // Audio

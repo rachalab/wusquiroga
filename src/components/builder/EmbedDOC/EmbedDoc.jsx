@@ -15,10 +15,7 @@ function EmbedDOC({ title, embed, file, cta, colorschema }) {
         </div>
       )}
 
-      {!embed &&
-        !downloadUrl && ( // Mensaje si no hay embed ni URL de descarga
-          <p>Embed code is not present.</p>
-        )}
+      {!embed && !downloadUrl && <p>Embed code is not present.</p>}
     </div>
   );
 }
