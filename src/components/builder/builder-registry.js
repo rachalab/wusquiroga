@@ -359,6 +359,7 @@ Builder.registerComponent(PhotoGallery, {
       name: "images",
       friendlyName: "Images",
       type: "array",
+      defaultValue: [],
       subFields: [
         {
           name: "file",
@@ -369,7 +370,8 @@ Builder.registerComponent(PhotoGallery, {
         { name: "line1", friendlyName: "Line 1", type: "string" },
         { name: "line2", friendlyName: "Line 2", type: "string" }
       ],
-    },{name: "colorschema",
+    }
+    ,{name: "colorschema",
       friendlyName: "Color Schema",
       type: "string",
       enum: [

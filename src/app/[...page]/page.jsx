@@ -6,7 +6,7 @@ builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
 export default async function Page(props) {
   const builderModelName = "page";
-  
+
   const content = await builder
     // Get the page content from Builder with the specified options
     .get(builderModelName, {

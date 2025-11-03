@@ -1,7 +1,7 @@
 import { builder } from "@builder.io/sdk";
 import { RenderBuilderContent } from "@components/builder/builder";
 import Breadcrumb from "@components/structure/Breadcrumb/Breadcrumb";
-import styles from './proyecto.module.scss';
+import styles from "./proyecto.module.scss";
 
 // Builder Public API Key set in .env file
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
@@ -20,24 +20,37 @@ export default async function Page({ params }) {
     })
     .toPromise();
 
-  // Definición de niveles del breadcrumb
-  const BreadcrumbLevel0 = {
-    title: project?.data?.category?.value?.data?.title || "",
-    url: project?.data?.category?.value?.data?.url || "#",
-  };
+  console.log(project);
 
-  const BreadcrumbLevel1 = {
-    title: project?.data?.organizations?.[0]?.organization?.value?.data?.title || "",
-    url: project?.data?.organizations?.[0]?.organization?.value?.data?.url || "#",
-  };
+  // Definición de niveles del breadcrumb
+
+  // Construcción dinámica de breadcrumb
+  const categories =
+    project?.data?.categories
+      ?.map((cat) => ({
+        title: cat?.categoryid?.value?.data?.title || "",
+        url: cat?.categoryid?.value?.data?.url || "#",
+      }))
+      ?.filter((c) => c.title) || [];
+
+  const organizations =
+    project?.data?.organizations
+      ?.map((org) => ({
+        title: org?.organization?.value?.data?.title || "",
+        url: org?.organization?.value?.data?.url || "#",
+      }))
+      ?.filter((o) => o.title) || [];
+
+  // Combinar ambos arrays (categorías primero, luego organizaciones)
+  const breadcrumbHierarchy = [...categories, ...organizations];
 
   return (
     <>
-    <section className={styles.project}>
-      <Breadcrumb hierarchy={[BreadcrumbLevel0, BreadcrumbLevel1]} />
-      <h1>{project?.data?.title}</h1>
-    </section>
-    <RenderBuilderContent content={project} model={builderModelName} />
+      <section className={styles.project}>
+        <Breadcrumb hierarchy={breadcrumbHierarchy} />
+        <h1>{project?.data?.title}</h1>
+      </section>
+      <RenderBuilderContent content={project} model={builderModelName} />
     </>
   );
 }
