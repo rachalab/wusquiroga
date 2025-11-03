@@ -20,8 +20,6 @@ export default async function Page({ params }) {
     })
     .toPromise();
 
-  console.log(project);
-
   // Definición de niveles del breadcrumb
 
   // Construcción dinámica de breadcrumb

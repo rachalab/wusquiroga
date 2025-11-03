@@ -189,6 +189,7 @@ function PhotoGallery({
           : {}
       }
     >
+      {renderGallery()}
       {isEditing && (
         <div style={{ marginBottom: "12px", fontSize: "14px", color: "#666" }}>
           {isUploading
@@ -202,7 +203,6 @@ function PhotoGallery({
           </div>
         </div>
       )}
-      {renderGallery()}
     </section>
   );
 }
