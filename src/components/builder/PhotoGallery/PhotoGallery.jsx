@@ -181,7 +181,7 @@ function PhotoGallery({
         isEditing
           ? {
               border: "2px dashed #999",
-              padding: "16px 0 0 0",
+              padding: "0 0 16px 0",
               borderRadius: "8px",
               textAlign: "center",
               minHeight: "100px",
@@ -191,14 +191,14 @@ function PhotoGallery({
     >
       {renderGallery()}
       {isEditing && (
-        <div style={{ marginBottom: "12px", fontSize: "14px", color: "#666" }}>
+        <div style={{ fontSize: "18px", color: "#000" }}>
           {isUploading
             ? "⏳ Subiendo imágenes..."
             : "📁 Arrastrá y soltá imágenes aquí para agregarlas a la galería"}
           {error && (
             <div style={{ color: "red", marginTop: "8px" }}>Error: {error}</div>
           )}
-          <div style={{ fontSize: "12px", marginTop: "4px" }}>
+          <div style={{ fontSize: "16px", marginTop: "4px" }}>
             Imágenes actuales: {localImages.length}
           </div>
         </div>
