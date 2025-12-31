@@ -162,6 +162,7 @@ function PhotoGallery({
     colorschema,
   };
 
+
   const renderGallery = () => {
     switch (format) {
       case "carrousel":
@@ -180,12 +181,12 @@ function PhotoGallery({
       style={
         isEditing
           ? {
-              border: "2px dashed #999",
-              padding: "0 0 16px 0",
-              borderRadius: "8px",
-              textAlign: "center",
-              minHeight: "100px",
-            }
+            border: "2px dashed #999",
+            padding: "0 0 16px 0",
+            borderRadius: "8px",
+            textAlign: "center",
+            minHeight: "100px",
+          }
           : {}
       }
     >

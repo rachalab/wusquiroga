@@ -41,7 +41,7 @@ export default async function Page({ params }) {
 
   // Combinar ambos arrays (categorías primero, luego organizaciones)
   const breadcrumbHierarchy = [...categories, ...organizations];
-
+  console.log(project);
   return (
     <>
       <section className={styles.project}>

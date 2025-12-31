@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+
+assets/
+assets2/
+assets3/
+assets4/
+assets5/
+upload/
+assets-catalog/
+

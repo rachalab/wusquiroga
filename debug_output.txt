@@ -1,0 +1,1875 @@
+[dotenv@17.2.3] injecting env (4) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+Starting Asset Download...
+Fetching asset metadata from Builder.io Admin API...
+(node:17870) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Admin API Access Check: {
+  "status": 400,
+  "message": "Organization is required"
+}
+No organizations found with this Private Key.
+Fetching content from Builder.io: https://cdn.builder.io/api/v2/content/project?apiKey=2790c3a6ae0449e5aacbaee710c2b6d0&limit=100
+Scanning 29 pages...
+Scanning project: INVAP: branding para TECNOLOGÍA DE ALTA COMPLEJIDAD
+{
+  categories: [ { categoryid: [Object] }, { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '8e357421ed904d4a9937ce7f78a78b23',
+    model: 'category'
+  },
+  images: [
+    {
+      file: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4673a6170a6943bfa91b4b0eadaa6e28'
+    }
+  ],
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'INVAP: branding para TECNOLOGÍA DE ALTA COMPLEJIDAD',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-25224b8442a14ab78836e1f81e04bedb',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-ec11a694950645b996785bbd5d109e52',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-zaj7eknkr5k',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/invap',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4673a6170a6943bfa91b4b0eadaa6e28 -> Folder: assets, ID: 4673a6170a6943bfa91b4b0eadaa6e28
+Failed to download https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4673a6170a6943bfa91b4b0eadaa6e28: Status 404
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F2d1a272ff9e748f4823fa6b91512573f?width=1785 -> Folder: assets, ID: 2d1a272ff9e748f4823fa6b91512573f
+Skipping (exists): assets/2d1a272ff9e748f4823fa6b91512573f.jpg
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1d38eb7d0e6e449292f1b6fb32977702?alt=media&token=6daf422c-0a6a-4497-8792-c9172c3bd01e&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: 1d38eb7d0e6e449292f1b6fb32977702
+Skipping (exists): assets/1d38eb7d0e6e449292f1b6fb32977702.mp3
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F632664d7598645d38b37c8be2102f9bc -> Folder: assets, ID: 632664d7598645d38b37c8be2102f9bc
+Skipping (exists): assets/632664d7598645d38b37c8be2102f9bc.jpg
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fbaf29dc1058a43f0ae70c1d205f733b6?alt=media&token=25f81411-a4d1-4fb1-9e4e-90763476b0b8&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: baf29dc1058a43f0ae70c1d205f733b6
+Skipping (exists): assets/baf29dc1058a43f0ae70c1d205f733b6.pdf
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fd9ff9fecaed8475cb4718873e308c33e?alt=media&token=d74929d2-0962-40c8-9aba-9e5dda859af8&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: d9ff9fecaed8475cb4718873e308c33e
+Failed to download https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fd9ff9fecaed8475cb4718873e308c33e?alt=media&token=d74929d2-0962-40c8-9aba-9e5dda859af8: Status 403
+Downloading: https://cdn.builder.io/api/v1/pixel?apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: pixel
+Failed to download https://cdn.builder.io/api/v1/pixel: Status 400
+Scanning project: MoMA: advisory board por Argentina en la 1ra exposición de Diseño LATAM
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '445e72619eca4035b241bf4f08d33803',
+    model: 'category'
+  },
+  categoryid: [ { categoryid: [Object] }, { categoryid: [Object] } ],
+  organizations: [ { organization: [Object] }, {} ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa680c1893fe94ee5a0dd4b138a9f8a39',
+  title: 'MoMA: advisory board por Argentina en la 1ra exposición de Diseño LATAM',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-9d6e7ae6049243669ca6f8c91cc130d6',
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-6ef52c453c4948d0bba876053a66046c',
+      meta: [Object],
+      component: [Object],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-0625cc7d525e4015a133cd7f09c3aa4e',
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-yoam8qmlo',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/moma-crafting-modernity',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa680c1893fe94ee5a0dd4b138a9f8a39 -> Folder: assets, ID: a680c1893fe94ee5a0dd4b138a9f8a39
+Skipping (exists): assets/a680c1893fe94ee5a0dd4b138a9f8a39.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F92be20ca19d8439bb8774d2be74739ea?width=1785 -> Folder: assets, ID: 92be20ca19d8439bb8774d2be74739ea
+Skipping (exists): assets/92be20ca19d8439bb8774d2be74739ea.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ff0884c7a301349f5ad8f258d20a64a8b -> Folder: assets, ID: f0884c7a301349f5ad8f258d20a64a8b
+Skipping (exists): assets/f0884c7a301349f5ad8f258d20a64a8b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ffcb7323bdef146dab7bfa0bcae639ddb -> Folder: assets, ID: fcb7323bdef146dab7bfa0bcae639ddb
+Skipping (exists): assets/fcb7323bdef146dab7bfa0bcae639ddb.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe997aa83c1454f569f02b3348b0502ce -> Folder: assets, ID: e997aa83c1454f569f02b3348b0502ce
+Skipping (exists): assets/e997aa83c1454f569f02b3348b0502ce.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ff79725bef1bf4c53a1c20f421bb5a20f -> Folder: assets, ID: f79725bef1bf4c53a1c20f421bb5a20f
+Skipping (exists): assets/f79725bef1bf4c53a1c20f421bb5a20f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ffe89664d23b14acdaa92df8fd7c3d751 -> Folder: assets, ID: fe89664d23b14acdaa92df8fd7c3d751
+Skipping (exists): assets/fe89664d23b14acdaa92df8fd7c3d751.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7ff8a0dd5d3641bfb6ad5410ac55d79b -> Folder: assets, ID: 7ff8a0dd5d3641bfb6ad5410ac55d79b
+Skipping (exists): assets/7ff8a0dd5d3641bfb6ad5410ac55d79b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1583636a4b344c0bac28ec41f44df80a -> Folder: assets, ID: 1583636a4b344c0bac28ec41f44df80a
+Skipping (exists): assets/1583636a4b344c0bac28ec41f44df80a.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F34c16796e9284d4fbd8b1dded4041973 -> Folder: assets, ID: 34c16796e9284d4fbd8b1dded4041973
+Skipping (exists): assets/34c16796e9284d4fbd8b1dded4041973.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F55537b112bde4a39bfeb8dd6567b6eb3 -> Folder: assets, ID: 55537b112bde4a39bfeb8dd6567b6eb3
+Skipping (exists): assets/55537b112bde4a39bfeb8dd6567b6eb3.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb0789a8236994fb1a5edfd6d3f1f38b5 -> Folder: assets, ID: b0789a8236994fb1a5edfd6d3f1f38b5
+Skipping (exists): assets/b0789a8236994fb1a5edfd6d3f1f38b5.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ff1db11fdd9ac4800b730bf770720fae0 -> Folder: assets, ID: f1db11fdd9ac4800b730bf770720fae0
+Skipping (exists): assets/f1db11fdd9ac4800b730bf770720fae0.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F983b9f5ba01d4ad9b47c009f045d8547 -> Folder: assets, ID: 983b9f5ba01d4ad9b47c009f045d8547
+Skipping (exists): assets/983b9f5ba01d4ad9b47c009f045d8547.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe29921d6e79b4509a741dd39b54db032 -> Folder: assets, ID: e29921d6e79b4509a741dd39b54db032
+Skipping (exists): assets/e29921d6e79b4509a741dd39b54db032.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa08e6d6422ea42e690ddffd91ca40d44 -> Folder: assets, ID: a08e6d6422ea42e690ddffd91ca40d44
+Skipping (exists): assets/a08e6d6422ea42e690ddffd91ca40d44.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F0c67acdddb054795bcebf8caab3f8352 -> Folder: assets, ID: 0c67acdddb054795bcebf8caab3f8352
+Skipping (exists): assets/0c67acdddb054795bcebf8caab3f8352.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ff44560bceacb46e99f2b790652e234f3 -> Folder: assets, ID: f44560bceacb46e99f2b790652e234f3
+Skipping (exists): assets/f44560bceacb46e99f2b790652e234f3.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6ab401b921fd4ea7b5ec4fc9200f50e5 -> Folder: assets, ID: 6ab401b921fd4ea7b5ec4fc9200f50e5
+Skipping (exists): assets/6ab401b921fd4ea7b5ec4fc9200f50e5.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F60c541aa816e4b31a958cd43006e8b04 -> Folder: assets, ID: 60c541aa816e4b31a958cd43006e8b04
+Skipping (exists): assets/60c541aa816e4b31a958cd43006e8b04.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ff7e03c1cb4fb49a2a001ec5c738bb6bb -> Folder: assets, ID: f7e03c1cb4fb49a2a001ec5c738bb6bb
+Skipping (exists): assets/f7e03c1cb4fb49a2a001ec5c738bb6bb.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa4e5fd39c662452a92db4d749880c197 -> Folder: assets, ID: a4e5fd39c662452a92db4d749880c197
+Skipping (exists): assets/a4e5fd39c662452a92db4d749880c197.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F003d4fa2489249ba89d1fe234820fb1e -> Folder: assets, ID: 003d4fa2489249ba89d1fe234820fb1e
+Skipping (exists): assets/003d4fa2489249ba89d1fe234820fb1e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F0511e723cd2c4f9c91d8991d86eb7a2b -> Folder: assets, ID: 0511e723cd2c4f9c91d8991d86eb7a2b
+Skipping (exists): assets/0511e723cd2c4f9c91d8991d86eb7a2b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe8f8930e355f46b1a86f394785f5bcfb -> Folder: assets, ID: e8f8930e355f46b1a86f394785f5bcfb
+Skipping (exists): assets/e8f8930e355f46b1a86f394785f5bcfb.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc2ab1072b7ab40e2a7306605f5093463 -> Folder: assets, ID: c2ab1072b7ab40e2a7306605f5093463
+Skipping (exists): assets/c2ab1072b7ab40e2a7306605f5093463.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4d9af2d5dd0f49aaabff3a0150cdc7e0 -> Folder: assets, ID: 4d9af2d5dd0f49aaabff3a0150cdc7e0
+Skipping (exists): assets/4d9af2d5dd0f49aaabff3a0150cdc7e0.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9d215bdbdde949ef97618eb824ecb655 -> Folder: assets, ID: 9d215bdbdde949ef97618eb824ecb655
+Skipping (exists): assets/9d215bdbdde949ef97618eb824ecb655.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F12e171c7cf78469eb139007d2b9a428d -> Folder: assets, ID: 12e171c7cf78469eb139007d2b9a428d
+Skipping (exists): assets/12e171c7cf78469eb139007d2b9a428d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb25a0997d4bc4b299de9a7edc5dd1a1c -> Folder: assets, ID: b25a0997d4bc4b299de9a7edc5dd1a1c
+Skipping (exists): assets/b25a0997d4bc4b299de9a7edc5dd1a1c.jpg
+Scanning project: ALBERTO CHURBA: 1ra retrospectiva y record de públicos
+{
+  altText: 'WQ_MNAD_ChurbaA_27.jpg',
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '445e72619eca4035b241bf4f08d33803',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] }, { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F609d1342cef5491caca00c264e451819',
+  title: 'ALBERTO CHURBA: 1ra retrospectiva y record de públicos',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-223c1f13925f424391090fa37e4d4994',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-c292cc30c87e4843aa46067844fa860f',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      tagName: 'a',
+      id: 'builder-63847186665540cbb2e18ecffbba0da2',
+      properties: [Object],
+      linkUrl: 'https://drive.google.com/drive/folders/1bo5DQ64tKYGo1P88AVJZLiTKkbBia_G8?usp=sharing',
+      meta: [Object],
+      component: [Object],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-f28cod1e3r5',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/alberto-churba',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F609d1342cef5491caca00c264e451819 -> Folder: assets, ID: 609d1342cef5491caca00c264e451819
+Skipping (exists): assets/609d1342cef5491caca00c264e451819.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F371cd4b9355b4e2ba28f6d157d6f3f7f?width=1785 -> Folder: assets, ID: 371cd4b9355b4e2ba28f6d157d6f3f7f
+Skipping (exists): assets/371cd4b9355b4e2ba28f6d157d6f3f7f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb11a545ef7c0407f9e5070ea3819085b -> Folder: assets, ID: b11a545ef7c0407f9e5070ea3819085b
+Skipping (exists): assets/b11a545ef7c0407f9e5070ea3819085b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F043fa40a64844af2915c779a4fd21735 -> Folder: assets, ID: 043fa40a64844af2915c779a4fd21735
+Skipping (exists): assets/043fa40a64844af2915c779a4fd21735.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F00a29730d8be46a88c9ba03c01c8fca2 -> Folder: assets, ID: 00a29730d8be46a88c9ba03c01c8fca2
+Skipping (exists): assets/00a29730d8be46a88c9ba03c01c8fca2.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fcdcc5885751f45b6a205b5902bf6d7f6 -> Folder: assets, ID: cdcc5885751f45b6a205b5902bf6d7f6
+Skipping (exists): assets/cdcc5885751f45b6a205b5902bf6d7f6.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1c02427bc94c4f1eb7038616c8bb65d5 -> Folder: assets, ID: 1c02427bc94c4f1eb7038616c8bb65d5
+Skipping (exists): assets/1c02427bc94c4f1eb7038616c8bb65d5.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F0de4d629968e477fbd489d7d82605acb -> Folder: assets, ID: 0de4d629968e477fbd489d7d82605acb
+Skipping (exists): assets/0de4d629968e477fbd489d7d82605acb.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe3664242d6884e548139a1987099f3d9 -> Folder: assets, ID: e3664242d6884e548139a1987099f3d9
+Skipping (exists): assets/e3664242d6884e548139a1987099f3d9.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F78f610924b3f4e84906fad0c1574118d -> Folder: assets, ID: 78f610924b3f4e84906fad0c1574118d
+Skipping (exists): assets/78f610924b3f4e84906fad0c1574118d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3d854145f07e4cefb533340cf5d8b04b -> Folder: assets, ID: 3d854145f07e4cefb533340cf5d8b04b
+Skipping (exists): assets/3d854145f07e4cefb533340cf5d8b04b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3e669a1e75474e45a59c8a9a7cebe0d3 -> Folder: assets, ID: 3e669a1e75474e45a59c8a9a7cebe0d3
+Skipping (exists): assets/3e669a1e75474e45a59c8a9a7cebe0d3.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fedb1f6b13140471f8fd032f726013618 -> Folder: assets, ID: edb1f6b13140471f8fd032f726013618
+Skipping (exists): assets/edb1f6b13140471f8fd032f726013618.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7a1836ee68d741978ebaec17ee71d963?width=1785 -> Folder: assets, ID: 7a1836ee68d741978ebaec17ee71d963
+Skipping (exists): assets/7a1836ee68d741978ebaec17ee71d963.jpg
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6d375bbf2c54446399b499edfcc49c71%2Fcompressed?apiKey=2790c3a6ae0449e5aacbaee710c2b6d0&token=6d375bbf2c54446399b499edfcc49c71&alt=media&optimized=true -> Folder: assets/6d375bbf2c54446399b499edfcc49c71, ID: compressed
+Skipping (exists): assets/6d375bbf2c54446399b499edfcc49c71/compressed.mp4
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fcf7814c1d20143d2a6c88ff99b276f21 -> Folder: assets, ID: cf7814c1d20143d2a6c88ff99b276f21
+Skipping (exists): assets/cf7814c1d20143d2a6c88ff99b276f21.jpg
+Scanning project: LAURA O. : diseño de una EXPERIENCIA SIMBÓLICA
+{
+  altText: 'WQ_MNAD_Laura-O_Fin-Principio_9.JPG',
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '8e357421ed904d4a9937ce7f78a78b23',
+    model: 'category'
+  },
+  images: [
+    {
+      file: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4673a6170a6943bfa91b4b0eadaa6e28'
+    }
+  ],
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F92a2a1be8b224b109693f6b378828ee8',
+  title: 'LAURA O. : diseño de una EXPERIENCIA SIMBÓLICA',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-654152f32ff54d969dbfad65a6593878',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-6f4ab02e94f94d8c925383549c0075e5',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-73xu91yqker',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/laura-o',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F92a2a1be8b224b109693f6b378828ee8 -> Folder: assets, ID: 92a2a1be8b224b109693f6b378828ee8
+Skipping (exists): assets/92a2a1be8b224b109693f6b378828ee8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ff8d100f81f6b4a008479ea9661b7e18a?width=1785 -> Folder: assets, ID: f8d100f81f6b4a008479ea9661b7e18a
+Skipping (exists): assets/f8d100f81f6b4a008479ea9661b7e18a.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F944de9fd6eff41fba4896c209a63fce0 -> Folder: assets, ID: 944de9fd6eff41fba4896c209a63fce0
+Skipping (exists): assets/944de9fd6eff41fba4896c209a63fce0.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F59cdc4dc033a49b490bdba2d74fe5778 -> Folder: assets, ID: 59cdc4dc033a49b490bdba2d74fe5778
+Skipping (exists): assets/59cdc4dc033a49b490bdba2d74fe5778.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3c1297ec46614f7e8961d78aa1344104 -> Folder: assets, ID: 3c1297ec46614f7e8961d78aa1344104
+Skipping (exists): assets/3c1297ec46614f7e8961d78aa1344104.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F83bb3e11a33d459285b06665f466e574 -> Folder: assets, ID: 83bb3e11a33d459285b06665f466e574
+Skipping (exists): assets/83bb3e11a33d459285b06665f466e574.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc6a40507e9e7437995e8f74030fdae61 -> Folder: assets, ID: c6a40507e9e7437995e8f74030fdae61
+Skipping (exists): assets/c6a40507e9e7437995e8f74030fdae61.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fed0e003cba6549bebb0b8159f6bb1c91 -> Folder: assets, ID: ed0e003cba6549bebb0b8159f6bb1c91
+Skipping (exists): assets/ed0e003cba6549bebb0b8159f6bb1c91.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fdd568b246b3f42c7a49e6956352472fe -> Folder: assets, ID: dd568b246b3f42c7a49e6956352472fe
+Skipping (exists): assets/dd568b246b3f42c7a49e6956352472fe.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fdf4a11840f0a4e00b8a097264502423b -> Folder: assets, ID: df4a11840f0a4e00b8a097264502423b
+Skipping (exists): assets/df4a11840f0a4e00b8a097264502423b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6ebcc243d509427f92562b4db3b4fd7a -> Folder: assets, ID: 6ebcc243d509427f92562b4db3b4fd7a
+Skipping (exists): assets/6ebcc243d509427f92562b4db3b4fd7a.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F985c3ef19a314cafab6faf1fe219344b -> Folder: assets, ID: 985c3ef19a314cafab6faf1fe219344b
+Skipping (exists): assets/985c3ef19a314cafab6faf1fe219344b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F902299cde94246d3a7e8082cbaa4d764 -> Folder: assets, ID: 902299cde94246d3a7e8082cbaa4d764
+Skipping (exists): assets/902299cde94246d3a7e8082cbaa4d764.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F57a43c32d49646988811c9577da4fa30 -> Folder: assets, ID: 57a43c32d49646988811c9577da4fa30
+Skipping (exists): assets/57a43c32d49646988811c9577da4fa30.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9be08d46a4f9414b8647d7e8e5f90f84 -> Folder: assets, ID: 9be08d46a4f9414b8647d7e8e5f90f84
+Skipping (exists): assets/9be08d46a4f9414b8647d7e8e5f90f84.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fddc37a6f486c414289a2af9b0af8f9b3 -> Folder: assets, ID: ddc37a6f486c414289a2af9b0af8f9b3
+Skipping (exists): assets/ddc37a6f486c414289a2af9b0af8f9b3.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fdbb18e09dd794139aba7713c2b979eb4 -> Folder: assets, ID: dbb18e09dd794139aba7713c2b979eb4
+Skipping (exists): assets/dbb18e09dd794139aba7713c2b979eb4.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F32cb7290e3344cdcb67654cd33b1d848 -> Folder: assets, ID: 32cb7290e3344cdcb67654cd33b1d848
+Skipping (exists): assets/32cb7290e3344cdcb67654cd33b1d848.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F82fde83d3c8b44f2b3592deeb169956e -> Folder: assets, ID: 82fde83d3c8b44f2b3592deeb169956e
+Skipping (exists): assets/82fde83d3c8b44f2b3592deeb169956e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F89cc0d47eda649629fabf40863d30986 -> Folder: assets, ID: 89cc0d47eda649629fabf40863d30986
+Skipping (exists): assets/89cc0d47eda649629fabf40863d30986.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ffe5bfbf7f94144419c7e7a7d24d2739c -> Folder: assets, ID: fe5bfbf7f94144419c7e7a7d24d2739c
+Skipping (exists): assets/fe5bfbf7f94144419c7e7a7d24d2739c.jpg
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa042f66b720642d9bb027022b448b4af?alt=media&token=c988090a-1fa6-4a92-b0a1-084319a67b2d&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: a042f66b720642d9bb027022b448b4af
+Skipping (exists): assets/a042f66b720642d9bb027022b448b4af.pdf
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7520e54451f44e3cb33e79865d5bce8a -> Folder: assets, ID: 7520e54451f44e3cb33e79865d5bce8a
+Skipping (exists): assets/7520e54451f44e3cb33e79865d5bce8a.jpg
+Scanning project: FUNDACIÓN IDA: armado institucional y posicionamiento internacional
+{
+  altText: 'WQ_IDA_Colegiales_1.JPG',
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '376633edb3a24c0a99fe90c63257ff00',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6d5e5a0c749943448a6c05794013e58d',
+  title: 'FUNDACIÓN IDA: armado institucional y posicionamiento internacional',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-7f34526c35d7493db80b8aebf6263afe',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-aab95deb4e8547f09a2d3d7128265e6b',
+      meta: [Object],
+      component: [Object],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-0d1d6a4504db4e26af0cfb25f14ac7d9',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-borenah5pzp',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/fundacion-ida',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6d5e5a0c749943448a6c05794013e58d -> Folder: assets, ID: 6d5e5a0c749943448a6c05794013e58d
+Skipping (exists): assets/6d5e5a0c749943448a6c05794013e58d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7a3dc59119304ce1b53a0e4e1e7c92be?width=1785 -> Folder: assets, ID: 7a3dc59119304ce1b53a0e4e1e7c92be
+Skipping (exists): assets/7a3dc59119304ce1b53a0e4e1e7c92be.jpg
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6bde332159ab49dbb9048d411532c83b?alt=media&token=969c91f7-8e16-46e7-938e-bd2e5f5766bd&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: 6bde332159ab49dbb9048d411532c83b
+Failed to download https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6bde332159ab49dbb9048d411532c83b?alt=media&token=969c91f7-8e16-46e7-938e-bd2e5f5766bd: Status 403
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F45211a2c1ac44a31a007d373b7828c37 -> Folder: assets, ID: 45211a2c1ac44a31a007d373b7828c37
+Skipping (exists): assets/45211a2c1ac44a31a007d373b7828c37.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7a3dc59119304ce1b53a0e4e1e7c92be -> Folder: assets, ID: 7a3dc59119304ce1b53a0e4e1e7c92be
+Skipping (exists): assets/7a3dc59119304ce1b53a0e4e1e7c92be.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa03124010ec144f7a1ddfe168c9e7f58 -> Folder: assets, ID: a03124010ec144f7a1ddfe168c9e7f58
+Skipping (exists): assets/a03124010ec144f7a1ddfe168c9e7f58.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3e4d8620976a4e668764eb0825112056 -> Folder: assets, ID: 3e4d8620976a4e668764eb0825112056
+Skipping (exists): assets/3e4d8620976a4e668764eb0825112056.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F47fdb1a17b5d4c398ba986169fafdc7b -> Folder: assets, ID: 47fdb1a17b5d4c398ba986169fafdc7b
+Skipping (exists): assets/47fdb1a17b5d4c398ba986169fafdc7b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4baca91fe2a34826a9d6d7cf779cd9f8 -> Folder: assets, ID: 4baca91fe2a34826a9d6d7cf779cd9f8
+Skipping (exists): assets/4baca91fe2a34826a9d6d7cf779cd9f8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5a712e2308094490b0055772bafcb348 -> Folder: assets, ID: 5a712e2308094490b0055772bafcb348
+Skipping (exists): assets/5a712e2308094490b0055772bafcb348.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fd1c73d3e8e1a4c41a2855cba255198f8 -> Folder: assets, ID: d1c73d3e8e1a4c41a2855cba255198f8
+Skipping (exists): assets/d1c73d3e8e1a4c41a2855cba255198f8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa666c4e7766f4ae5be1f649ca9750bf5?width=1785 -> Folder: assets, ID: a666c4e7766f4ae5be1f649ca9750bf5
+Skipping (exists): assets/a666c4e7766f4ae5be1f649ca9750bf5.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc7e5f74be7524563ac8c47e6af283d9c -> Folder: assets, ID: c7e5f74be7524563ac8c47e6af283d9c
+Skipping (exists): assets/c7e5f74be7524563ac8c47e6af283d9c.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6c78d1b3166a47e99a737eb0d4928cfc -> Folder: assets, ID: 6c78d1b3166a47e99a737eb0d4928cfc
+Skipping (exists): assets/6c78d1b3166a47e99a737eb0d4928cfc.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa5232ee003c047f3a2c220c4b9335f6d -> Folder: assets, ID: a5232ee003c047f3a2c220c4b9335f6d
+Skipping (exists): assets/a5232ee003c047f3a2c220c4b9335f6d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fdf3852ffabd8472da4b9c0658ac1069a -> Folder: assets, ID: df3852ffabd8472da4b9c0658ac1069a
+Skipping (exists): assets/df3852ffabd8472da4b9c0658ac1069a.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fcc95b58263014fd6aba557e7044847a5 -> Folder: assets, ID: cc95b58263014fd6aba557e7044847a5
+Skipping (exists): assets/cc95b58263014fd6aba557e7044847a5.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F2509e9a5f6854d8f9bcf7cef5ffb0f0c -> Folder: assets, ID: 2509e9a5f6854d8f9bcf7cef5ffb0f0c
+Skipping (exists): assets/2509e9a5f6854d8f9bcf7cef5ffb0f0c.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb2b05b955844435fa677ac07a81132ae -> Folder: assets, ID: b2b05b955844435fa677ac07a81132ae
+Skipping (exists): assets/b2b05b955844435fa677ac07a81132ae.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa092dfd94d18445b8b7cd08928d65f4d -> Folder: assets, ID: a092dfd94d18445b8b7cd08928d65f4d
+Skipping (exists): assets/a092dfd94d18445b8b7cd08928d65f4d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F109ddbcc91cd46e499a60d246fc184a0 -> Folder: assets, ID: 109ddbcc91cd46e499a60d246fc184a0
+Skipping (exists): assets/109ddbcc91cd46e499a60d246fc184a0.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F43cf23d5910e4bafa6e4f3e353739944 -> Folder: assets, ID: 43cf23d5910e4bafa6e4f3e353739944
+Skipping (exists): assets/43cf23d5910e4bafa6e4f3e353739944.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7922017516b64a04b45011ff37c43eba -> Folder: assets, ID: 7922017516b64a04b45011ff37c43eba
+Skipping (exists): assets/7922017516b64a04b45011ff37c43eba.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F33879f9db6b64f9d802c5bc8453a6f58 -> Folder: assets, ID: 33879f9db6b64f9d802c5bc8453a6f58
+Skipping (exists): assets/33879f9db6b64f9d802c5bc8453a6f58.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fbf01e457ab1a4aad9c594d4485cab4b2 -> Folder: assets, ID: bf01e457ab1a4aad9c594d4485cab4b2
+Skipping (exists): assets/bf01e457ab1a4aad9c594d4485cab4b2.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb6bc1425ec68476e8bfb8bbb1beca717 -> Folder: assets, ID: b6bc1425ec68476e8bfb8bbb1beca717
+Skipping (exists): assets/b6bc1425ec68476e8bfb8bbb1beca717.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F45501a35d5fb41a8b8854e389f02f027 -> Folder: assets, ID: 45501a35d5fb41a8b8854e389f02f027
+Skipping (exists): assets/45501a35d5fb41a8b8854e389f02f027.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F919b297dd19444dea812020c9d9ab18e -> Folder: assets, ID: 919b297dd19444dea812020c9d9ab18e
+Skipping (exists): assets/919b297dd19444dea812020c9d9ab18e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F170220764dd747c9a5c32ab58b5b5806 -> Folder: assets, ID: 170220764dd747c9a5c32ab58b5b5806
+Failed to download https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F170220764dd747c9a5c32ab58b5b5806: Status 404
+Scanning project: SATSCH GALLERY: ESTRATEGIAS DE MERCADO para diseño argentino
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '8e357421ed904d4a9937ce7f78a78b23',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'SATSCH GALLERY: ESTRATEGIAS DE MERCADO para diseño argentino',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-4b91090e9dfe4dbb81c843fe6b2ac7ca',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-22e67ff7f88e4b78a008160984d4a133',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-zz7a5o908z',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/satsch-gallery',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F2d1a272ff9e748f4823fa6b91512573f?width=1800 -> Folder: assets, ID: 2d1a272ff9e748f4823fa6b91512573f
+Skipping (exists): assets/2d1a272ff9e748f4823fa6b91512573f.jpg
+Scanning project: DAE: formación para emprendedores con líderes de UK y LATAM
+{
+  altText: 'dae-artlab-british-council-fundacion-bunge-born-2023-2.webp',
+  categories: [ { categoryid: [Object] }, { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '8e357421ed904d4a9937ce7f78a78b23',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1b9c035fe98d4ea08c9ca0cb6367c3d5',
+  title: 'DAE: formación para emprendedores con líderes de UK y LATAM',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-b4b4efea90824705bd3a68888568af72',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-466901dd526d4ecb94680d75ce2a3869',
+      meta: [Object],
+      component: [Object],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-daa204b378664dc382b7c020fb568c1a',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-29wp9wx5dlo',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/dae',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1b9c035fe98d4ea08c9ca0cb6367c3d5 -> Folder: assets, ID: 1b9c035fe98d4ea08c9ca0cb6367c3d5
+Skipping (exists): assets/1b9c035fe98d4ea08c9ca0cb6367c3d5.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa2bebea8e2b449a2b50b7b26bfdd2092 -> Folder: assets, ID: a2bebea8e2b449a2b50b7b26bfdd2092
+Skipping (exists): assets/a2bebea8e2b449a2b50b7b26bfdd2092.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F11b9aceec1844888b7ce3a293cbc5ff1 -> Folder: assets, ID: 11b9aceec1844888b7ce3a293cbc5ff1
+Skipping (exists): assets/11b9aceec1844888b7ce3a293cbc5ff1.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fad194eda5b7a4b3aa8cdb692d5a4100d -> Folder: assets, ID: ad194eda5b7a4b3aa8cdb692d5a4100d
+Skipping (exists): assets/ad194eda5b7a4b3aa8cdb692d5a4100d.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fcec09a9ece3149379a89e172f7bf50e9 -> Folder: assets, ID: cec09a9ece3149379a89e172f7bf50e9
+Skipping (exists): assets/cec09a9ece3149379a89e172f7bf50e9.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F314d8d5f68674ba4a09156e1ec65db96 -> Folder: assets, ID: 314d8d5f68674ba4a09156e1ec65db96
+Skipping (exists): assets/314d8d5f68674ba4a09156e1ec65db96.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F42c26090459e457389e6b87381a5ba28 -> Folder: assets, ID: 42c26090459e457389e6b87381a5ba28
+Skipping (exists): assets/42c26090459e457389e6b87381a5ba28.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F23f668df03c341e2a31bd4e63064139a -> Folder: assets, ID: 23f668df03c341e2a31bd4e63064139a
+Skipping (exists): assets/23f668df03c341e2a31bd4e63064139a.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7608d953af774a8099ec6552de7a7ab0 -> Folder: assets, ID: 7608d953af774a8099ec6552de7a7ab0
+Skipping (exists): assets/7608d953af774a8099ec6552de7a7ab0.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F81823f9e9fea4307af8ca35be261bf5a -> Folder: assets, ID: 81823f9e9fea4307af8ca35be261bf5a
+Skipping (exists): assets/81823f9e9fea4307af8ca35be261bf5a.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F40f70fa80b0e46fba4decdc2ba0ae75e -> Folder: assets, ID: 40f70fa80b0e46fba4decdc2ba0ae75e
+Skipping (exists): assets/40f70fa80b0e46fba4decdc2ba0ae75e.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe3541d9ed5aa4531ac3a351291ac97a6 -> Folder: assets, ID: e3541d9ed5aa4531ac3a351291ac97a6
+Skipping (exists): assets/e3541d9ed5aa4531ac3a351291ac97a6.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5ee73b9521de4fdab3c2f0ca2b29b9df -> Folder: assets, ID: 5ee73b9521de4fdab3c2f0ca2b29b9df
+Skipping (exists): assets/5ee73b9521de4fdab3c2f0ca2b29b9df.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Feb9536bb0cbc4756869208dfce2043cb -> Folder: assets, ID: eb9536bb0cbc4756869208dfce2043cb
+Skipping (exists): assets/eb9536bb0cbc4756869208dfce2043cb.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe0ee7870a6b34bd18d06d5eb3a3c604e -> Folder: assets, ID: e0ee7870a6b34bd18d06d5eb3a3c604e
+Skipping (exists): assets/e0ee7870a6b34bd18d06d5eb3a3c604e.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F59ef3a14962e45319e482928a587f52e -> Folder: assets, ID: 59ef3a14962e45319e482928a587f52e
+Skipping (exists): assets/59ef3a14962e45319e482928a587f52e.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe76e11729fdd4441a87bf2e899568458 -> Folder: assets, ID: e76e11729fdd4441a87bf2e899568458
+Skipping (exists): assets/e76e11729fdd4441a87bf2e899568458.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4b2742a9e2c846778244383342eeed68 -> Folder: assets, ID: 4b2742a9e2c846778244383342eeed68
+Skipping (exists): assets/4b2742a9e2c846778244383342eeed68.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8d2d03abbef14e1faebe10d20c22013b -> Folder: assets, ID: 8d2d03abbef14e1faebe10d20c22013b
+Skipping (exists): assets/8d2d03abbef14e1faebe10d20c22013b.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F87422269b2ed4dabb98c3abdd647203a -> Folder: assets, ID: 87422269b2ed4dabb98c3abdd647203a
+Skipping (exists): assets/87422269b2ed4dabb98c3abdd647203a.webp
+Scanning project: MMAMM: la mayor donación patrimonial en la historial del museo
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '03aeafd63a084211a5244e089eef5792',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] }, { organization: [Object] } ],
+  themeId: false,
+  title: 'MMAMM: la mayor donación patrimonial en la historial del Museo',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-3e49b8fbc4db452c80d87fabe74b1f47',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-e1081d904a6f4a44bde26a94c8ed900e',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-41wag9ec40o',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/donacion-mmamm',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc75c823ed2d041d7bdb4dd77f5a55f99 -> Folder: assets, ID: c75c823ed2d041d7bdb4dd77f5a55f99
+Skipping (exists): assets/c75c823ed2d041d7bdb4dd77f5a55f99.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8781d28a51ae4c7b912088ca336406e8 -> Folder: assets, ID: 8781d28a51ae4c7b912088ca336406e8
+Skipping (exists): assets/8781d28a51ae4c7b912088ca336406e8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4b2af09a008d43bdbe909187bcd00573 -> Folder: assets, ID: 4b2af09a008d43bdbe909187bcd00573
+Failed to download https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4b2af09a008d43bdbe909187bcd00573: Status 404
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fcc85bf98bd144549b829043446a75ba6 -> Folder: assets, ID: cc85bf98bd144549b829043446a75ba6
+Failed to download https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fcc85bf98bd144549b829043446a75ba6: Status 404
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5f226d227ffe49f190fcab0bd39d2fe8 -> Folder: assets, ID: 5f226d227ffe49f190fcab0bd39d2fe8
+Skipping (exists): assets/5f226d227ffe49f190fcab0bd39d2fe8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9eb14cf8da0e4d918e579fd5b3830e3e -> Folder: assets, ID: 9eb14cf8da0e4d918e579fd5b3830e3e
+Failed to download https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9eb14cf8da0e4d918e579fd5b3830e3e: Status 404
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4e4fb8b9ed284dcc8877683a66011e08 -> Folder: assets, ID: 4e4fb8b9ed284dcc8877683a66011e08
+Skipping (exists): assets/4e4fb8b9ed284dcc8877683a66011e08.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F06d7db8c92a24b3280b62e80a1ae33de -> Folder: assets, ID: 06d7db8c92a24b3280b62e80a1ae33de
+Skipping (exists): assets/06d7db8c92a24b3280b62e80a1ae33de.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9eea6adcb8de4dccbb148774451f3a8e -> Folder: assets, ID: 9eea6adcb8de4dccbb148774451f3a8e
+Skipping (exists): assets/9eea6adcb8de4dccbb148774451f3a8e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5c8a736b517b4db0bb7ad46c57f20c18 -> Folder: assets, ID: 5c8a736b517b4db0bb7ad46c57f20c18
+Skipping (exists): assets/5c8a736b517b4db0bb7ad46c57f20c18.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fde686f588a45496d9d8d6e7576775101 -> Folder: assets, ID: de686f588a45496d9d8d6e7576775101
+Skipping (exists): assets/de686f588a45496d9d8d6e7576775101.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3f97a6b73477403cafae2c4f01075ee4 -> Folder: assets, ID: 3f97a6b73477403cafae2c4f01075ee4
+Skipping (exists): assets/3f97a6b73477403cafae2c4f01075ee4.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1e530f0fc315483d8c52db2fddcdd70f -> Folder: assets, ID: 1e530f0fc315483d8c52db2fddcdd70f
+Skipping (exists): assets/1e530f0fc315483d8c52db2fddcdd70f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe297eecc2eea4d4d9029b2fbad51a98a -> Folder: assets, ID: e297eecc2eea4d4d9029b2fbad51a98a
+Skipping (exists): assets/e297eecc2eea4d4d9029b2fbad51a98a.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F96124c7b63fb4680bd5470dfb64fd2b2 -> Folder: assets, ID: 96124c7b63fb4680bd5470dfb64fd2b2
+Skipping (exists): assets/96124c7b63fb4680bd5470dfb64fd2b2.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe42bcf6aa574441c96627777b51f326e -> Folder: assets, ID: e42bcf6aa574441c96627777b51f326e
+Skipping (exists): assets/e42bcf6aa574441c96627777b51f326e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F55ed53d57f9e407bbb1fbacdeee2c548 -> Folder: assets, ID: 55ed53d57f9e407bbb1fbacdeee2c548
+Skipping (exists): assets/55ed53d57f9e407bbb1fbacdeee2c548.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F318019358f984b84b0f5b2b0674a5c03 -> Folder: assets, ID: 318019358f984b84b0f5b2b0674a5c03
+Skipping (exists): assets/318019358f984b84b0f5b2b0674a5c03.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe9c9d2eb77ce42b09003e62632072f05 -> Folder: assets, ID: e9c9d2eb77ce42b09003e62632072f05
+Skipping (exists): assets/e9c9d2eb77ce42b09003e62632072f05.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb2b3887e7c91427d8052ca06203f1ef1 -> Folder: assets, ID: b2b3887e7c91427d8052ca06203f1ef1
+Skipping (exists): assets/b2b3887e7c91427d8052ca06203f1ef1.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F494c68744d0b495b9b2f98c25d274904 -> Folder: assets, ID: 494c68744d0b495b9b2f98c25d274904
+Skipping (exists): assets/494c68744d0b495b9b2f98c25d274904.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7782d177f9c84eb2846102f2dae5ee33 -> Folder: assets, ID: 7782d177f9c84eb2846102f2dae5ee33
+Skipping (exists): assets/7782d177f9c84eb2846102f2dae5ee33.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fdbab6c967fb2475e87e9d1051b1b20b2 -> Folder: assets, ID: dbab6c967fb2475e87e9d1051b1b20b2
+Skipping (exists): assets/dbab6c967fb2475e87e9d1051b1b20b2.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb3c38a49c0014896bf282e9fef71d42f -> Folder: assets, ID: b3c38a49c0014896bf282e9fef71d42f
+Skipping (exists): assets/b3c38a49c0014896bf282e9fef71d42f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F983fc839fd464e068f9f681e18355ccd -> Folder: assets, ID: 983fc839fd464e068f9f681e18355ccd
+Skipping (exists): assets/983fc839fd464e068f9f681e18355ccd.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F844bd2c5d26544b6a705638023cd4f85 -> Folder: assets, ID: 844bd2c5d26544b6a705638023cd4f85
+Skipping (exists): assets/844bd2c5d26544b6a705638023cd4f85.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe3e146d09f97404fabc1782fbe3284f0 -> Folder: assets, ID: e3e146d09f97404fabc1782fbe3284f0
+Skipping (exists): assets/e3e146d09f97404fabc1782fbe3284f0.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5df84279bde34ed9a9b0e7da054e0c5e -> Folder: assets, ID: 5df84279bde34ed9a9b0e7da054e0c5e
+Skipping (exists): assets/5df84279bde34ed9a9b0e7da054e0c5e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa1be3a72d2a9448f9b9745158b2f5eab -> Folder: assets, ID: a1be3a72d2a9448f9b9745158b2f5eab
+Skipping (exists): assets/a1be3a72d2a9448f9b9745158b2f5eab.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb1387028ad694b10bb563f27c960b9dc -> Folder: assets, ID: b1387028ad694b10bb563f27c960b9dc
+Skipping (exists): assets/b1387028ad694b10bb563f27c960b9dc.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F86afd923215a4ec79cfb6c0d989d4422 -> Folder: assets, ID: 86afd923215a4ec79cfb6c0d989d4422
+Skipping (exists): assets/86afd923215a4ec79cfb6c0d989d4422.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F0d21bb7e256f430ab97bf4a0781325b8 -> Folder: assets, ID: 0d21bb7e256f430ab97bf4a0781325b8
+Skipping (exists): assets/0d21bb7e256f430ab97bf4a0781325b8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1d097296236c4082a4eaa60faddfbc00 -> Folder: assets, ID: 1d097296236c4082a4eaa60faddfbc00
+Skipping (exists): assets/1d097296236c4082a4eaa60faddfbc00.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa4c5e0ee2258424090346523ea2f57ea -> Folder: assets, ID: a4c5e0ee2258424090346523ea2f57ea
+Skipping (exists): assets/a4c5e0ee2258424090346523ea2f57ea.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F160cc77e500341d4b1001942dd61913c -> Folder: assets, ID: 160cc77e500341d4b1001942dd61913c
+Skipping (exists): assets/160cc77e500341d4b1001942dd61913c.jpg
+Scanning project: FABRICAR FUTURO: la revolución de Siam Di Tella, Atma y Noblex
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: 'c856466c850a44a5be87619b47199b97',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Feb0353b7d5464303809af52c19c78afe',
+  title: 'FABRICAR FUTURO: la revolución de Siam Di Tella, Atma y Noblex',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-c9383fc1faa24219a61c1ad7d20e85d9',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-79535e6118914ce1829c82592e2b4e2b',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-q42svommujs',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/fabricar-futuro',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Feb0353b7d5464303809af52c19c78afe -> Folder: assets, ID: eb0353b7d5464303809af52c19c78afe
+Skipping (exists): assets/eb0353b7d5464303809af52c19c78afe.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fd9b92b055d7445e1945cbcc02b666e16 -> Folder: assets, ID: d9b92b055d7445e1945cbcc02b666e16
+Skipping (exists): assets/d9b92b055d7445e1945cbcc02b666e16.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8665afd12ea247fdbe66d6b8a283dca7 -> Folder: assets, ID: 8665afd12ea247fdbe66d6b8a283dca7
+Skipping (exists): assets/8665afd12ea247fdbe66d6b8a283dca7.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F44d1ec3bb925418d940dd2eafad5fa06 -> Folder: assets, ID: 44d1ec3bb925418d940dd2eafad5fa06
+Skipping (exists): assets/44d1ec3bb925418d940dd2eafad5fa06.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F77a7666b4e78488b8d5a340f8a610439 -> Folder: assets, ID: 77a7666b4e78488b8d5a340f8a610439
+Skipping (exists): assets/77a7666b4e78488b8d5a340f8a610439.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F412ba6872d424e34b4a14677f16dd629 -> Folder: assets, ID: 412ba6872d424e34b4a14677f16dd629
+Skipping (exists): assets/412ba6872d424e34b4a14677f16dd629.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Feb0353b7d5464303809af52c19c78afe?width=1785 -> Folder: assets, ID: eb0353b7d5464303809af52c19c78afe
+Skipping (exists): assets/eb0353b7d5464303809af52c19c78afe.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fce4c446c1f69412b96f6a96178443ea7 -> Folder: assets, ID: ce4c446c1f69412b96f6a96178443ea7
+Skipping (exists): assets/ce4c446c1f69412b96f6a96178443ea7.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe910fb92906d4e8c94d982c906e755b5 -> Folder: assets, ID: e910fb92906d4e8c94d982c906e755b5
+Skipping (exists): assets/e910fb92906d4e8c94d982c906e755b5.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F05fd385a39344b2b8fe131401ada1725 -> Folder: assets, ID: 05fd385a39344b2b8fe131401ada1725
+Skipping (exists): assets/05fd385a39344b2b8fe131401ada1725.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F13c374eecb6246578ec70e309b3884a6 -> Folder: assets, ID: 13c374eecb6246578ec70e309b3884a6
+Skipping (exists): assets/13c374eecb6246578ec70e309b3884a6.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9da854fca9fd4cc9b59b28ea6a14b8f0 -> Folder: assets, ID: 9da854fca9fd4cc9b59b28ea6a14b8f0
+Skipping (exists): assets/9da854fca9fd4cc9b59b28ea6a14b8f0.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F35e758ecdb6545eba48d30403e4c282d -> Folder: assets, ID: 35e758ecdb6545eba48d30403e4c282d
+Skipping (exists): assets/35e758ecdb6545eba48d30403e4c282d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F36224b085b78499c9db05a8bab1c8156 -> Folder: assets, ID: 36224b085b78499c9db05a8bab1c8156
+Skipping (exists): assets/36224b085b78499c9db05a8bab1c8156.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe8d89080db0142b9b896c5eaf7caac45 -> Folder: assets, ID: e8d89080db0142b9b896c5eaf7caac45
+Skipping (exists): assets/e8d89080db0142b9b896c5eaf7caac45.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5e703818ecea48f08d586a2a04348604 -> Folder: assets, ID: 5e703818ecea48f08d586a2a04348604
+Skipping (exists): assets/5e703818ecea48f08d586a2a04348604.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8f9ba4ebe7024dbe9218e1825243049d -> Folder: assets, ID: 8f9ba4ebe7024dbe9218e1825243049d
+Skipping (exists): assets/8f9ba4ebe7024dbe9218e1825243049d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fed222f47c3d440799e785cbde991fe22 -> Folder: assets, ID: ed222f47c3d440799e785cbde991fe22
+Skipping (exists): assets/ed222f47c3d440799e785cbde991fe22.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb27667b9cc834972b36d1ea3bac1a9ee -> Folder: assets, ID: b27667b9cc834972b36d1ea3bac1a9ee
+Skipping (exists): assets/b27667b9cc834972b36d1ea3bac1a9ee.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6c4f0c5c72b4438c9d7a1b55fe05943b -> Folder: assets, ID: 6c4f0c5c72b4438c9d7a1b55fe05943b
+Skipping (exists): assets/6c4f0c5c72b4438c9d7a1b55fe05943b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F908a77379d794142af4554752e31fa33 -> Folder: assets, ID: 908a77379d794142af4554752e31fa33
+Skipping (exists): assets/908a77379d794142af4554752e31fa33.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fad3e77ac03044adf80518cc19b73b513 -> Folder: assets, ID: ad3e77ac03044adf80518cc19b73b513
+Skipping (exists): assets/ad3e77ac03044adf80518cc19b73b513.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Feef81efb3e8c422a91f6a40283784507 -> Folder: assets, ID: eef81efb3e8c422a91f6a40283784507
+Skipping (exists): assets/eef81efb3e8c422a91f6a40283784507.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc694bba8dd85411ab5658b47fc4430d9 -> Folder: assets, ID: c694bba8dd85411ab5658b47fc4430d9
+Skipping (exists): assets/c694bba8dd85411ab5658b47fc4430d9.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8b7126ffaf55431c8520c60ec171888d -> Folder: assets, ID: 8b7126ffaf55431c8520c60ec171888d
+Skipping (exists): assets/8b7126ffaf55431c8520c60ec171888d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe44cb74e16a14983a059448ceba94b05 -> Folder: assets, ID: e44cb74e16a14983a059448ceba94b05
+Skipping (exists): assets/e44cb74e16a14983a059448ceba94b05.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe681372037a64ebbab84ef0d9ba59af6 -> Folder: assets, ID: e681372037a64ebbab84ef0d9ba59af6
+Skipping (exists): assets/e681372037a64ebbab84ef0d9ba59af6.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F58a4e5cb4de846618d2f82dc7f4cf2d1 -> Folder: assets, ID: 58a4e5cb4de846618d2f82dc7f4cf2d1
+Skipping (exists): assets/58a4e5cb4de846618d2f82dc7f4cf2d1.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa2a4e3898dba4a3fbe6b399642c5b3d8 -> Folder: assets, ID: a2a4e3898dba4a3fbe6b399642c5b3d8
+Skipping (exists): assets/a2a4e3898dba4a3fbe6b399642c5b3d8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9248ddb27b6f4ed1a0d765c883523b00 -> Folder: assets, ID: 9248ddb27b6f4ed1a0d765c883523b00
+Skipping (exists): assets/9248ddb27b6f4ed1a0d765c883523b00.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7ea44bdbdcda4cde9c2b1686d54c926d -> Folder: assets, ID: 7ea44bdbdcda4cde9c2b1686d54c926d
+Skipping (exists): assets/7ea44bdbdcda4cde9c2b1686d54c926d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F2a4ee3190de246b89e9fc7cf5a1925af -> Folder: assets, ID: 2a4ee3190de246b89e9fc7cf5a1925af
+Skipping (exists): assets/2a4ee3190de246b89e9fc7cf5a1925af.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F81e90feaf9414f12b36bed929b971ee9 -> Folder: assets, ID: 81e90feaf9414f12b36bed929b971ee9
+Skipping (exists): assets/81e90feaf9414f12b36bed929b971ee9.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa0d2583ebd984673bdd1d09264d17885 -> Folder: assets, ID: a0d2583ebd984673bdd1d09264d17885
+Skipping (exists): assets/a0d2583ebd984673bdd1d09264d17885.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc97b4a4b80d64d35939e44b23b66d7d2 -> Folder: assets, ID: c97b4a4b80d64d35939e44b23b66d7d2
+Skipping (exists): assets/c97b4a4b80d64d35939e44b23b66d7d2.jpg
+Scanning project: CCEBA: proyecto de recuperación en San Telmo
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '376633edb3a24c0a99fe90c63257ff00',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'CCEBA: proyecto de recuperación en San Telmo',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-ee0ca51d22614c91b5d5b45650d25223',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-096666beba2a4375b17c5bf5c6e82052',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-5l0fxe5cwnq',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/cceba-san-telmo',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: Alto Estudio: equipamiento de guarda patrimonial
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '03aeafd63a084211a5244e089eef5792',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'Alto Estudio: equipamiento de guarda patrimonial',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-58dfbfc2ce084159bc4687f7a38d2b3e',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-91f895a6a3574f40906c950398825fd1',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-qsnhvvsq2c',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/equipamiento-guarda-patrimonial',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: FERIA DE AMÉRICA: descubrimiento y puesta en valor
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '03aeafd63a084211a5244e089eef5792',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] }, { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7538a9d0c8e24282aa6ab0c513720ec8',
+  title: 'Feria de América: descubrimiento y puesta en valor',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-664bdfaf84664c5ab26d54aa6e8d5cce',
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-79f3c0d85f094269b757ab5ea3ff103f',
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-y7m8rv31r18',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/feria-de-america',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7538a9d0c8e24282aa6ab0c513720ec8 -> Folder: assets, ID: 7538a9d0c8e24282aa6ab0c513720ec8
+Skipping (exists): assets/7538a9d0c8e24282aa6ab0c513720ec8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ffedcfacb1ceb4cba90d87219c349878a?format=webp&width=1800 -> Folder: assets, ID: fedcfacb1ceb4cba90d87219c349878a
+Skipping (exists): assets/fedcfacb1ceb4cba90d87219c349878a.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9fbd3d6ee3204fa4ac257eb9e3c80ee4?format=webp -> Folder: assets, ID: 9fbd3d6ee3204fa4ac257eb9e3c80ee4
+Skipping (exists): assets/9fbd3d6ee3204fa4ac257eb9e3c80ee4.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fbc2df54405ed4fe8b701754f04daf34c?format=webp -> Folder: assets, ID: bc2df54405ed4fe8b701754f04daf34c
+Skipping (exists): assets/bc2df54405ed4fe8b701754f04daf34c.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F625ee671767748568d503b910e003528?format=webp -> Folder: assets, ID: 625ee671767748568d503b910e003528
+Skipping (exists): assets/625ee671767748568d503b910e003528.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7f337cd210c845b7bae854a3e47f1faa?format=webp -> Folder: assets, ID: 7f337cd210c845b7bae854a3e47f1faa
+Skipping (exists): assets/7f337cd210c845b7bae854a3e47f1faa.webp
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F69fac8666c9d49a5b56987d619785fa3?alt=media&token=3838fade-9ce6-4b24-9ff2-2dd82ef54c99&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: 69fac8666c9d49a5b56987d619785fa3
+Failed to download https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F69fac8666c9d49a5b56987d619785fa3?alt=media&token=3838fade-9ce6-4b24-9ff2-2dd82ef54c99: Status 403
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Faee7b3df0796403ea3d5350e2abc8dbc -> Folder: assets, ID: aee7b3df0796403ea3d5350e2abc8dbc
+Skipping (exists): assets/aee7b3df0796403ea3d5350e2abc8dbc.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F602875f7f9e74d8bb8122009fc45c589 -> Folder: assets, ID: 602875f7f9e74d8bb8122009fc45c589
+Skipping (exists): assets/602875f7f9e74d8bb8122009fc45c589.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fbd3dad7277de4485b7b69fc06bac976c -> Folder: assets, ID: bd3dad7277de4485b7b69fc06bac976c
+Skipping (exists): assets/bd3dad7277de4485b7b69fc06bac976c.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F41e7ed643a574c9dacabf3e3357d2e2f -> Folder: assets, ID: 41e7ed643a574c9dacabf3e3357d2e2f
+Skipping (exists): assets/41e7ed643a574c9dacabf3e3357d2e2f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb1162f3815654d198d63f013f9501cd8 -> Folder: assets, ID: b1162f3815654d198d63f013f9501cd8
+Skipping (exists): assets/b1162f3815654d198d63f013f9501cd8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F858a1246787a416c9fe3fdc30c5bd21f -> Folder: assets, ID: 858a1246787a416c9fe3fdc30c5bd21f
+Skipping (exists): assets/858a1246787a416c9fe3fdc30c5bd21f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F382e3235c31144fd8e91f7c39952325e -> Folder: assets, ID: 382e3235c31144fd8e91f7c39952325e
+Skipping (exists): assets/382e3235c31144fd8e91f7c39952325e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc8a3184fea8a4efcbfa1d473bcb02bc4 -> Folder: assets, ID: c8a3184fea8a4efcbfa1d473bcb02bc4
+Skipping (exists): assets/c8a3184fea8a4efcbfa1d473bcb02bc4.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3b7fcf1e418f4cee91d8fddd17d32c31 -> Folder: assets, ID: 3b7fcf1e418f4cee91d8fddd17d32c31
+Skipping (exists): assets/3b7fcf1e418f4cee91d8fddd17d32c31.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F713b90ba4832423886da173d80447cdf -> Folder: assets, ID: 713b90ba4832423886da173d80447cdf
+Skipping (exists): assets/713b90ba4832423886da173d80447cdf.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5e5d6599a19c455a91c7669602d7085c -> Folder: assets, ID: 5e5d6599a19c455a91c7669602d7085c
+Skipping (exists): assets/5e5d6599a19c455a91c7669602d7085c.jpg
+Scanning project: FUNDACIÓN DEL INTERIOR: rescate cultural en el Oeste argentino
+{
+  categories: [ { categoryid: [Object] }, { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '376633edb3a24c0a99fe90c63257ff00',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'FUNDACIÓN DEL INTERIOR: rescate cultural en el Oeste argentino',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-4cf018e64bd44582b2701e74a8ee1987',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-716ff160a49d42c89379f993a07ed0a7',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-9af78vx07ma',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/fundacion-del-interior',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe01710e71bcb4a829b2859a3da426300 -> Folder: assets, ID: e01710e71bcb4a829b2859a3da426300
+Skipping (exists): assets/e01710e71bcb4a829b2859a3da426300.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F7a51627124d84166a0d883ab86e13306 -> Folder: assets, ID: 7a51627124d84166a0d883ab86e13306
+Skipping (exists): assets/7a51627124d84166a0d883ab86e13306.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa051e4dae1d24cd5a3b52eeb67765c6b -> Folder: assets, ID: a051e4dae1d24cd5a3b52eeb67765c6b
+Skipping (exists): assets/a051e4dae1d24cd5a3b52eeb67765c6b.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc53900722f1f44c2ae7680fce5f5c1fa -> Folder: assets, ID: c53900722f1f44c2ae7680fce5f5c1fa
+Skipping (exists): assets/c53900722f1f44c2ae7680fce5f5c1fa.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F99c39651f71c45919eb62630815b0f41 -> Folder: assets, ID: 99c39651f71c45919eb62630815b0f41
+Skipping (exists): assets/99c39651f71c45919eb62630815b0f41.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F64837d31163b41f5af0331ec01e8f12d -> Folder: assets, ID: 64837d31163b41f5af0331ec01e8f12d
+Skipping (exists): assets/64837d31163b41f5af0331ec01e8f12d.webp
+Scanning project: CARLOS ROLANDO: historia de un PRECURSOR HISPANO–ARGENTINO
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: 'c856466c850a44a5be87619b47199b97',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ {} ],
+  themeId: false,
+  title: 'CARLOS ROLANDO: historia de un PRECURSOR HISPANO–ARGENTINO',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-515e0457d6a441c3b3b8c939937cd607',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-6e4be1eb45764d51929127b934b7faab',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-q4khnvq1o3',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/invap',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: Centro Cultural Julio Le Parc: repatriación simbólica a Mendoza
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '376633edb3a24c0a99fe90c63257ff00',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'Centro Cultural Julio Le Parc: repatriación simbólica a Mendoza',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-3a2c2181e5974818b0d16ba45412f54a',
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-a49d76964796450db7c52d16da799fbd',
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-ilu7tmhbps',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/julio-le-parc',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3a4d6c7ddb7e463cb7a42fe0dedd68ca -> Folder: assets, ID: 3a4d6c7ddb7e463cb7a42fe0dedd68ca
+Skipping (exists): assets/3a4d6c7ddb7e463cb7a42fe0dedd68ca.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa548248f2dfc4bf88a24601773908b2e -> Folder: assets, ID: a548248f2dfc4bf88a24601773908b2e
+Skipping (exists): assets/a548248f2dfc4bf88a24601773908b2e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1c3e4e6d0bbd42829d0068d1245e5186 -> Folder: assets, ID: 1c3e4e6d0bbd42829d0068d1245e5186
+Skipping (exists): assets/1c3e4e6d0bbd42829d0068d1245e5186.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F48b785a99b7644ed8db21fbf9afe722f -> Folder: assets, ID: 48b785a99b7644ed8db21fbf9afe722f
+Skipping (exists): assets/48b785a99b7644ed8db21fbf9afe722f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F53f6d10bbe0945749003b4d58b616cb8 -> Folder: assets, ID: 53f6d10bbe0945749003b4d58b616cb8
+Skipping (exists): assets/53f6d10bbe0945749003b4d58b616cb8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa0236504967344b3b3f2e47d6896d7b9 -> Folder: assets, ID: a0236504967344b3b3f2e47d6896d7b9
+Skipping (exists): assets/a0236504967344b3b3f2e47d6896d7b9.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa0236504967344b3b3f2e47d6896d7b9?width=1785 -> Folder: assets, ID: a0236504967344b3b3f2e47d6896d7b9
+Skipping (exists): assets/a0236504967344b3b3f2e47d6896d7b9.jpg
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F36211ae64c714ee483049f46848e9ae9?alt=media&token=f4c91bb6-645f-4856-8eda-19ed2a2c3cf8&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: 36211ae64c714ee483049f46848e9ae9
+Skipping (exists): assets/36211ae64c714ee483049f46848e9ae9.pdf
+Scanning project: CCEBA: identidad y programación para Cooperación Internacional
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '79911390783242ae8e5be97d6ac6a87b',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'CCEBA: identidad y programación para Cooperación Internacional',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-dcfeb89f3bfa4884973be9ae1fea57d1',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-c6daade8fcb1472a98f783582c7467ce',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-6roptbcwsn2',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/cceba-comunicacion',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: IDA: archivos y colecciones de DISEÑO ARGENTINO
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '03aeafd63a084211a5244e089eef5792',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'IDA: archivos y colecciones de DISEÑO ARGENTINO',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-4420834fcf3a4e3caf3d3c94a9bd1dc0',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-c46b402351424b15b1b003c4d7849dd7',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-xlclt8ncets',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/ida-archivos-colecciones',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe2b2f35c6495439eaf46da79ec396565 -> Folder: assets, ID: e2b2f35c6495439eaf46da79ec396565
+Skipping (exists): assets/e2b2f35c6495439eaf46da79ec396565.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F796fb4b5f1b742888c47712669bb226d -> Folder: assets, ID: 796fb4b5f1b742888c47712669bb226d
+Skipping (exists): assets/796fb4b5f1b742888c47712669bb226d.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc5e8f228c10247d7ac0d026f905c64b3 -> Folder: assets, ID: c5e8f228c10247d7ac0d026f905c64b3
+Skipping (exists): assets/c5e8f228c10247d7ac0d026f905c64b3.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F3ca2aaf4ebe34bdf916d8ad6952ee753 -> Folder: assets, ID: 3ca2aaf4ebe34bdf916d8ad6952ee753
+Skipping (exists): assets/3ca2aaf4ebe34bdf916d8ad6952ee753.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F40829a327afd4991b6dda2a940186220 -> Folder: assets, ID: 40829a327afd4991b6dda2a940186220
+Skipping (exists): assets/40829a327afd4991b6dda2a940186220.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb9b6a57ea4dc476387b2ddcb45339dc6 -> Folder: assets, ID: b9b6a57ea4dc476387b2ddcb45339dc6
+Skipping (exists): assets/b9b6a57ea4dc476387b2ddcb45339dc6.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F2ec3dc64e7d9450396dd39030e9f0abf -> Folder: assets, ID: 2ec3dc64e7d9450396dd39030e9f0abf
+Skipping (exists): assets/2ec3dc64e7d9450396dd39030e9f0abf.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F159ee7452f334a78b61ebcb1eb5ce74e -> Folder: assets, ID: 159ee7452f334a78b61ebcb1eb5ce74e
+Skipping (exists): assets/159ee7452f334a78b61ebcb1eb5ce74e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4c795eae1b5b42fe9cc6defbe7842770 -> Folder: assets, ID: 4c795eae1b5b42fe9cc6defbe7842770
+Skipping (exists): assets/4c795eae1b5b42fe9cc6defbe7842770.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe4984973b0a6457d9d5b7ac3c4e806ef -> Folder: assets, ID: e4984973b0a6457d9d5b7ac3c4e806ef
+Skipping (exists): assets/e4984973b0a6457d9d5b7ac3c4e806ef.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F840112e5d2114905b181c8fb01b42a93 -> Folder: assets, ID: 840112e5d2114905b181c8fb01b42a93
+Skipping (exists): assets/840112e5d2114905b181c8fb01b42a93.jpg
+Scanning project: MATRICES: MUJERES del diseño argentino
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '445e72619eca4035b241bf4f08d33803',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'MATRICES: MUJERES del diseño argentino',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-21c4206a7659454caa9b6eec025379d1',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-bb451f5ce0424aecb1771e1190201dc8',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-e8ngwk2rl3k',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/matrices-mujeres',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: COLBO: recuperar una PYME EMBLEMÁTICA
+{
+  categories: [ { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '8e357421ed904d4a9937ce7f78a78b23',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F853f276dfe6e41f6be14e255dbcfc711',
+  title: 'COLBO: recuperar una PYME de CERÁMICA EMBLEMÁTICA',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-8378bd1f9fb6459088d8d4f2f9461933',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-db1f03a294344eec9e1c3b36e3f7fe5d',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-7195ff75d8e848c7b30ea82b9584d360',
+      component: [Object],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-8xn63gu3go9',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/colbo-ceramica',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F853f276dfe6e41f6be14e255dbcfc711 -> Folder: assets, ID: 853f276dfe6e41f6be14e255dbcfc711
+Skipping (exists): assets/853f276dfe6e41f6be14e255dbcfc711.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1af10c22ac4d45dabdea1060abdf9350?width=1785 -> Folder: assets, ID: 1af10c22ac4d45dabdea1060abdf9350
+Skipping (exists): assets/1af10c22ac4d45dabdea1060abdf9350.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fa5ce25a12fb64d529005efa382e80d4c -> Folder: assets, ID: a5ce25a12fb64d529005efa382e80d4c
+Skipping (exists): assets/a5ce25a12fb64d529005efa382e80d4c.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F888d07c9bf6042498dc0c396f752d680 -> Folder: assets, ID: 888d07c9bf6042498dc0c396f752d680
+Skipping (exists): assets/888d07c9bf6042498dc0c396f752d680.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fbfe6d0435c124402b47c705dbe67d641 -> Folder: assets, ID: bfe6d0435c124402b47c705dbe67d641
+Skipping (exists): assets/bfe6d0435c124402b47c705dbe67d641.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5f6c344aab144b4a8e826b96849de0da -> Folder: assets, ID: 5f6c344aab144b4a8e826b96849de0da
+Skipping (exists): assets/5f6c344aab144b4a8e826b96849de0da.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F4bd6f318cdd6484491442acceb0f9f74 -> Folder: assets, ID: 4bd6f318cdd6484491442acceb0f9f74
+Skipping (exists): assets/4bd6f318cdd6484491442acceb0f9f74.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F30bb3abba6574f9da91fe60824a9cbc8 -> Folder: assets, ID: 30bb3abba6574f9da91fe60824a9cbc8
+Skipping (exists): assets/30bb3abba6574f9da91fe60824a9cbc8.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8278f365de334feb8655fc2a1664cf09 -> Folder: assets, ID: 8278f365de334feb8655fc2a1664cf09
+Skipping (exists): assets/8278f365de334feb8655fc2a1664cf09.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F2ec9922e140748da845780ee7d8ea2e9?format=webp -> Folder: assets, ID: 2ec9922e140748da845780ee7d8ea2e9
+Skipping (exists): assets/2ec9922e140748da845780ee7d8ea2e9.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6d4ad6f965bf4296aef133bca2488e04 -> Folder: assets, ID: 6d4ad6f965bf4296aef133bca2488e04
+Skipping (exists): assets/6d4ad6f965bf4296aef133bca2488e04.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5d49253076b745f0a9f857890eb64d3b -> Folder: assets, ID: 5d49253076b745f0a9f857890eb64d3b
+Skipping (exists): assets/5d49253076b745f0a9f857890eb64d3b.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe800fb72f12a4a2bad5e01a49dc7a933 -> Folder: assets, ID: e800fb72f12a4a2bad5e01a49dc7a933
+Skipping (exists): assets/e800fb72f12a4a2bad5e01a49dc7a933.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F25b178b5fbab4d7790c7c1b7c43c87eb -> Folder: assets, ID: 25b178b5fbab4d7790c7c1b7c43c87eb
+Skipping (exists): assets/25b178b5fbab4d7790c7c1b7c43c87eb.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F98864ca1eb8c4d768b6b22f951b2883b -> Folder: assets, ID: 98864ca1eb8c4d768b6b22f951b2883b
+Skipping (exists): assets/98864ca1eb8c4d768b6b22f951b2883b.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F75fdb0c29e4a44baab4424e709e71f41 -> Folder: assets, ID: 75fdb0c29e4a44baab4424e709e71f41
+Skipping (exists): assets/75fdb0c29e4a44baab4424e709e71f41.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F007ee07421a340ae89928ab4b066564b -> Folder: assets, ID: 007ee07421a340ae89928ab4b066564b
+Skipping (exists): assets/007ee07421a340ae89928ab4b066564b.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fdc02f4483e854d1abcee6bc542c40feb -> Folder: assets, ID: dc02f4483e854d1abcee6bc542c40feb
+Skipping (exists): assets/dc02f4483e854d1abcee6bc542c40feb.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F6413865dff42406b9ea2bfba79c57c55 -> Folder: assets, ID: 6413865dff42406b9ea2bfba79c57c55
+Skipping (exists): assets/6413865dff42406b9ea2bfba79c57c55.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fb7bef253343f4cd3b3df9ec27b0acbc3 -> Folder: assets, ID: b7bef253343f4cd3b3df9ec27b0acbc3
+Skipping (exists): assets/b7bef253343f4cd3b3df9ec27b0acbc3.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F853f276dfe6e41f6be14e255dbcfc711?format=webp&width=1785 -> Folder: assets, ID: 853f276dfe6e41f6be14e255dbcfc711
+Skipping (exists): assets/853f276dfe6e41f6be14e255dbcfc711.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F0aad32f2f3d84319833d9ffe639a0bb7?format=webp&width=1785 -> Folder: assets, ID: 0aad32f2f3d84319833d9ffe639a0bb7
+Skipping (exists): assets/0aad32f2f3d84319833d9ffe639a0bb7.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fc893d506a00a43a290aca978ebb230ae -> Folder: assets, ID: c893d506a00a43a290aca978ebb230ae
+Skipping (exists): assets/c893d506a00a43a290aca978ebb230ae.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9aa613e31b6249a4b16a847385bfdf66 -> Folder: assets, ID: 9aa613e31b6249a4b16a847385bfdf66
+Skipping (exists): assets/9aa613e31b6249a4b16a847385bfdf66.webp
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F1af10c22ac4d45dabdea1060abdf9350 -> Folder: assets, ID: 1af10c22ac4d45dabdea1060abdf9350
+Skipping (exists): assets/1af10c22ac4d45dabdea1060abdf9350.webp
+Scanning project: MOHADED: exposición y libro TERRITORIO HÍBRIDO
+{
+  altText: 'WQ_Mohaded_Libro_10.jpg',
+  categories: [ { categoryid: [Object] }, { categoryid: [Object] } ],
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: 'c856466c850a44a5be87619b47199b97',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  thumbnail: 'https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8aa3737866324c7e97b575223caef768',
+  title: 'MOHADED: exposición y libro TERRITORIO HÍBRIDO',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-da06e2a48d67439da403436467607c31',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-665d37b78193431294b07ea7350f70a0',
+      component: [Object],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-715a0dce79b54e05978c0702d200b321',
+      meta: [Object],
+      component: [Object],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-d9a9e6dce0874936b4b8fadcd50d38a3',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-rnme1w6wd9f',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/mohaded',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F8aa3737866324c7e97b575223caef768 -> Folder: assets, ID: 8aa3737866324c7e97b575223caef768
+Skipping (exists): assets/8aa3737866324c7e97b575223caef768.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F151cda5e41974091ba3c5b49cfc498d8?width=1785 -> Folder: assets, ID: 151cda5e41974091ba3c5b49cfc498d8
+Skipping (exists): assets/151cda5e41974091ba3c5b49cfc498d8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fd4644cb1b6604370a8932fdf199fc5db -> Folder: assets, ID: d4644cb1b6604370a8932fdf199fc5db
+Skipping (exists): assets/d4644cb1b6604370a8932fdf199fc5db.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F76e84293762d432fb8076e53609d32e6 -> Folder: assets, ID: 76e84293762d432fb8076e53609d32e6
+Skipping (exists): assets/76e84293762d432fb8076e53609d32e6.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fd24ab2af04b34ac2aadcde61d0322a8c -> Folder: assets, ID: d24ab2af04b34ac2aadcde61d0322a8c
+Skipping (exists): assets/d24ab2af04b34ac2aadcde61d0322a8c.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F31236790ab0f4836a7de7890600bcbb0 -> Folder: assets, ID: 31236790ab0f4836a7de7890600bcbb0
+Skipping (exists): assets/31236790ab0f4836a7de7890600bcbb0.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe0d3cec2032c4b7ead9c86e597e8ac4e -> Folder: assets, ID: e0d3cec2032c4b7ead9c86e597e8ac4e
+Skipping (exists): assets/e0d3cec2032c4b7ead9c86e597e8ac4e.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fadd8b791b78649df800b952535e84c0b -> Folder: assets, ID: add8b791b78649df800b952535e84c0b
+Skipping (exists): assets/add8b791b78649df800b952535e84c0b.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F9c397f22983e4e62851024c3a69f598c -> Folder: assets, ID: 9c397f22983e4e62851024c3a69f598c
+Skipping (exists): assets/9c397f22983e4e62851024c3a69f598c.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Ff4af860ea2034d9fbec7b2b8d0d31083 -> Folder: assets, ID: f4af860ea2034d9fbec7b2b8d0d31083
+Skipping (exists): assets/f4af860ea2034d9fbec7b2b8d0d31083.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F2cc3507e21cf4aa0af3f6422e101a3b3 -> Folder: assets, ID: 2cc3507e21cf4aa0af3f6422e101a3b3
+Skipping (exists): assets/2cc3507e21cf4aa0af3f6422e101a3b3.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F5cc0a2b370444309bcf01debd382d5f9 -> Folder: assets, ID: 5cc0a2b370444309bcf01debd382d5f9
+Skipping (exists): assets/5cc0a2b370444309bcf01debd382d5f9.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F92e2fc3192374c0fbb711af67bc1a571 -> Folder: assets, ID: 92e2fc3192374c0fbb711af67bc1a571
+Skipping (exists): assets/92e2fc3192374c0fbb711af67bc1a571.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F75acbdf4e4c6443bb94f08ef61ceb7a3 -> Folder: assets, ID: 75acbdf4e4c6443bb94f08ef61ceb7a3
+Skipping (exists): assets/75acbdf4e4c6443bb94f08ef61ceb7a3.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F161600e143094f75bba59e9df163db72 -> Folder: assets, ID: 161600e143094f75bba59e9df163db72
+Skipping (exists): assets/161600e143094f75bba59e9df163db72.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F496b4c96ad044d4b91c78727e876ada2 -> Folder: assets, ID: 496b4c96ad044d4b91c78727e876ada2
+Skipping (exists): assets/496b4c96ad044d4b91c78727e876ada2.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F49018af16f4141bb9d3554a721433868 -> Folder: assets, ID: 49018af16f4141bb9d3554a721433868
+Skipping (exists): assets/49018af16f4141bb9d3554a721433868.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fe02b34b333e04833bbfc8479a695a90f -> Folder: assets, ID: e02b34b333e04833bbfc8479a695a90f
+Skipping (exists): assets/e02b34b333e04833bbfc8479a695a90f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fcb973ac7c7cd42ce85b1429584b5091f -> Folder: assets, ID: cb973ac7c7cd42ce85b1429584b5091f
+Skipping (exists): assets/cb973ac7c7cd42ce85b1429584b5091f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F919d04ab49d34aaa8b3be3a9433cf376 -> Folder: assets, ID: 919d04ab49d34aaa8b3be3a9433cf376
+Skipping (exists): assets/919d04ab49d34aaa8b3be3a9433cf376.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F20dbb5f9a72a48a58401efe2400b0696 -> Folder: assets, ID: 20dbb5f9a72a48a58401efe2400b0696
+Skipping (exists): assets/20dbb5f9a72a48a58401efe2400b0696.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F785897034faa4ca9b33e5d2ee61ddcd8 -> Folder: assets, ID: 785897034faa4ca9b33e5d2ee61ddcd8
+Skipping (exists): assets/785897034faa4ca9b33e5d2ee61ddcd8.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2Fae0ac8df204e4c16906a124e4b9eab33 -> Folder: assets, ID: ae0ac8df204e4c16906a124e4b9eab33
+Skipping (exists): assets/ae0ac8df204e4c16906a124e4b9eab33.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F839d54537ae84b2e8093183f9ee28774 -> Folder: assets, ID: 839d54537ae84b2e8093183f9ee28774
+Skipping (exists): assets/839d54537ae84b2e8093183f9ee28774.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F58678b4c712b47aebcb7f393496bf70f -> Folder: assets, ID: 58678b4c712b47aebcb7f393496bf70f
+Skipping (exists): assets/58678b4c712b47aebcb7f393496bf70f.jpg
+Downloading: https://cdn.builder.io/api/v1/image/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F61fa9124d9964f3c8ecc792cb1e8a9ab -> Folder: assets, ID: 61fa9124d9964f3c8ecc792cb1e8a9ab
+Skipping (exists): assets/61fa9124d9964f3c8ecc792cb1e8a9ab.jpg
+Downloading: https://cdn.builder.io/o/assets%2F2790c3a6ae0449e5aacbaee710c2b6d0%2F82708ee80a7849dd91edd256339c5b6d?alt=media&token=b2815121-b4d4-4f68-8e92-9c82e8aaa149&apiKey=2790c3a6ae0449e5aacbaee710c2b6d0 -> Folder: assets, ID: 82708ee80a7849dd91edd256339c5b6d
+Skipping (exists): assets/82708ee80a7849dd91edd256339c5b6d.pdf
+Scanning project: JANNELLO: archivo, piezas históricas y reediciones actuales
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '8e357421ed904d4a9937ce7f78a78b23',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'JANNELLO: archivo, piezas históricas y reediciones actuales',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-a961c6088551474a97e21db42fdb9880',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-4284046dbfd746a79b9e96a7e87eef04',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-72p7250q9hh',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/jannello',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: IBEROAMÉRICA: bienales, exposiciones y participación institucional
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '376633edb3a24c0a99fe90c63257ff00',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ {} ],
+  themeId: false,
+  title: 'IBEROAMÉRICA: bienales, exposiciones y participación institucional',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-6b47b46376554e2b9cbdffb90087398e',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-f626aa7d82784dd08de9ab9db795f419',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-ycp3i5ligko',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/invap',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: INTERMITENCIA: 15 años de investigación, 1 libro, 1 documental, 111 premios
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: 'c856466c850a44a5be87619b47199b97',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'INTERMITENCIA: 15 años de investigación, 1 libro, 1 documental, 111 premios',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-60cffd8338d74afd90d073dac0bfa846',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-c689a8a8d98a40c191364dc75054dc4d',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-uarbw9hdusl',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/intermitencia-diseno-mendocino',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: FOTOTRAMA: del recuerdo al PIXEL REMASTERIZADO
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '8e357421ed904d4a9937ce7f78a78b23',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'FOTOTRAMA: del recuerdo al PIXEL REMASTERIZADO',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-2198b0f6f4b94e8dbf26bec9246cd614',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-6cd6407ed23b4df3878a336f9043eaa0',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-a0yiav7bvi',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/fototrama',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: IDEAS MATERIALES: arte y diseño en la DÉCADA DEL 60
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: 'c856466c850a44a5be87619b47199b97',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'IDEAS MATERIALES: arte y diseño en la DÉCADA DEL 60',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-ba6ad2b393ad42e59e3c91e651c470f7',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-68717fcfe99c49d496b5dcdd3307877d',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-r1opxf29emf',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/ideas-materiales',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: ÉPICA: cronología imposible 100 AÑOS DE DISEÑO ARGENTINO
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: 'c856466c850a44a5be87619b47199b97',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ { organization: [Object] } ],
+  themeId: false,
+  title: 'ÉPICA: cronología imposible 100 AÑOS DE DISEÑO ARGENTINO',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-382630f9adaa474aac58d5bc7e0dfa0f',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-6c5af44d6b5b4dc5804dec4229e41d12',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-6h3v9sd10fu',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/invap',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: MACRO: aporte a la COLECCIÓN DE ARTE FEDERAL
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '03aeafd63a084211a5244e089eef5792',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ {} ],
+  themeId: false,
+  title: 'MACRO: aporte a la COLECCIÓN DE ARTE FEDERAL',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-73cc832f856949499462679d1dd91377',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-ff8e133527dd4bb9a6001d60ff38aa55',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-mx3zcibuq58',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/mendoza-macro',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: Otra cosa: cambia
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '03aeafd63a084211a5244e089eef5792',
+    model: 'category'
+  },
+  organizations: [ { organization: [Object] }, { organization: [Object] } ],
+  themeId: false,
+  title: 'Feria de América',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      layerName: 'SideA',
+      id: 'builder-522c227dd83d4503afc6fb504fbe9bf9',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-499c6809427748199c939e18136cefa8',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-xqbsalep2f',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/feria-de-america',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+Scanning project: INICIO FRECUENTE: tres pioneros en SUR AMÉRICA
+{
+  category: {
+    '@type': '@builder.io/core:Reference',
+    id: '445e72619eca4035b241bf4f08d33803',
+    model: 'category'
+  },
+  inputs: [],
+  organizations: [ {} ],
+  themeId: false,
+  title: 'INICIO FRECUENTE: tres pioneros en SUR AMÉRICA',
+  blocks: [
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-9b5ab0e2030f4573bb61d86bfc502012',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      '@type': '@builder.io/sdk:Element',
+      '@version': 2,
+      id: 'builder-fad75358b5f546439e7e137395a3553d',
+      meta: [Object],
+      component: [Object],
+      children: [Array],
+      responsiveStyles: [Object]
+    },
+    {
+      id: 'builder-pixel-y87qb89u9dj',
+      '@type': '@builder.io/sdk:Element',
+      tagName: 'img',
+      properties: [Object],
+      responsiveStyles: [Object]
+    }
+  ],
+  url: '/proyecto/interieur-forma',
+  state: { deviceSize: 'large', location: { path: '', query: {} } }
+}
+✅ Asset download complete. Check ./assets folder.

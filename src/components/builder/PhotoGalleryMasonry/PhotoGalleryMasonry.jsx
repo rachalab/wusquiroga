@@ -3,6 +3,9 @@ import styles from "./PhotoGalleryMasonry.module.scss";
 import colorSchemas from "@styles/colorSchemas.module.scss";
 
 function PhotoGalleryMasonry({ title, images, colorschema }) {
+
+  console.log(images)
+
   return (
     <div className={`${styles.gallery} ${colorSchemas[colorschema]}`}>
       {title && <h3 className={styles.title}>{title}</h3>}
