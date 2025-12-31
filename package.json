@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:https": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,6 +14,7 @@
     "@builder.io/dev-tools": "^1.6.72",
     "@builder.io/react": "^8.2.2",
     "@builder.io/sdk": "^6.0.9",
+    "@storyblok/react": "^5.4.20",
     "dotenv": "^17.2.3",
     "form-data": "^4.0.5",
     "gsap": "^3.13.0",
