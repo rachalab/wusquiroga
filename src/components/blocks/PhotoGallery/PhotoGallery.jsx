@@ -1,39 +1,30 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useMemo } from "react";
 import { storyblokEditable } from "@storyblok/react";
 import PhotoGalleryCarrousel from "@components/blocks/PhotoGalleryCarrousel/PhotoGalleryCarrousel";
 import PhotoGalleryMasonry from "@components/blocks/PhotoGalleryMasonry/PhotoGalleryMasonry";
 import PhotoGallerySlideshow from "@components/blocks/PhotoGallerySlideshow/PhotoGallerySlideshow";
 
-function toPlainArray(arr) {
-  try {
-    return Array.isArray(arr) ? JSON.parse(JSON.stringify(arr)) : [];
-  } catch {
-    return [];
-  }
-}
-
 function PhotoGallery({ blok }) {
   const { title, format, images: blokImages, colorschema } = blok;
 
-  // Transform Storyblok images to format expected by sub-components
-  // Storyblok multiasset returns an array of objects with property `filename`
-  // We map it to { file: filename } which seems to be what subcomponents expect
-  const initialImages = blokImages?.map(img => ({
-    file: img.filename,
-    title: img.title, // Preserving title if available
-    alt: img.alt
-  })) || [];
-
-  const [localImages, setLocalImages] = useState([]);
-
-  useEffect(() => {
-    setLocalImages(toPlainArray(initialImages));
+  // Transform Storyblok images and parse titles line1:line2
+  const images = useMemo(() => {
+    return blokImages?.map(img => {
+      const titleParts = img.title ? img.title.split(":") : [];
+      return {
+        file: img.filename,
+        alt: img.alt,
+        title: img.title,
+        line1: titleParts[0]?.trim() || "",
+        line2: titleParts[1]?.trim() || ""
+      };
+    }) || [];
   }, [blokImages]);
 
   const galleryProps = {
     title,
-    images: localImages,
+    images,
     colorschema,
   };
 

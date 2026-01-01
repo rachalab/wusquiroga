@@ -79,14 +79,27 @@ function PhotoGallerySlideshow({ title, images, colorschema }) {
       <div className={styles.photos}>
         {/* Slideshow Image */}
         {currentImage && currentImage.file && (
-          <img
-            ref={imageRef}
-            key={currentIndex}
-            src={currentImage.file}
-            alt={currentImage.title || `slideshow-image-${currentIndex}`}
-            className={styles.slideshowImage}
-            style={{ objectFit: "cover", width: "100%", height: "100%" }} // Ensure image covers the container
-          />
+          <div className={styles.imageContainer} style={{ position: 'relative', width: '100%', height: '100%' }}>
+            <img
+              ref={imageRef}
+              key={currentIndex}
+              src={currentImage.file}
+              alt={currentImage.alt || currentImage.title || `slideshow-image-${currentIndex}`}
+              className={styles.slideshowImage}
+              style={{ objectFit: "cover", width: "100%", height: "100%" }} // Ensure image covers the container
+            />
+            {(currentImage.line1 || currentImage.line2) && (
+              <div className={styles.overlay} style={{ position: 'absolute', bottom: 0, left: 0, padding: '1rem', background: 'rgba(0,0,0,0.5)', color: '#fff', width: '100%' }}>
+                {currentImage.line1 && <strong>{currentImage.line1}</strong>}
+                {currentImage.line2 && (
+                  <>
+                    <br />
+                    {currentImage.line2}
+                  </>
+                )}
+              </div>
+            )}
+          </div>
         )}
       </div>
     </div>

@@ -33,11 +33,11 @@ function PhotoGalleryCarrousel({ title, images, colorschema }) {
             {img.file && (
               <img
                 src={img.file}
-                alt={img.title || `image-${index}`}
+                alt={img.alt || img.title || `image-${index}`}
                 download="test.jpg"
               />
             )}
-            {(img.title || img.line1 || img.line2) && (
+            {(img.line1 || img.line2) && (
               <p>
                 {img.line1 && <strong>{img.line1}</strong>}
                 {img.line2 && (

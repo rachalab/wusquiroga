@@ -14,9 +14,9 @@ function PhotoGalleryMasonry({ title, images, colorschema }) {
         {images?.map((img, index) => (
           <div className={styles.image} key={index}>
             {img.file && (
-              <img src={img.file} alt={img.title || `image-${index}`} />
+              <img src={img.file} alt={img.alt || img.title || `image-${index}`} />
             )}
-            {(img.title || img.line1 || img.line2) && (
+            {(img.line1 || img.line2) && (
               <p>
                 {img.line1 && <strong>{img.line1}</strong>}
                 {img.line2 && (
