@@ -1,8 +1,8 @@
 import { getStoryblokApi } from '@/lib/storyblok';
 import { StoryblokStory } from '@storyblok/react/rsc';
 
-export default async function Home() {
-    const { data } = await fetchData();
+export default async function Page({ params }) {
+    const { data } = await fetchData(params.slug);
 
     return (
         <div className="page">
@@ -11,7 +11,7 @@ export default async function Home() {
     );
 }
 
-export async function fetchData() {
+export async function fetchData(slug) {
     const storyblokApi = getStoryblokApi();
-    return await storyblokApi.get(`cdn/stories/test`, { version: 'draft' });
+    return await storyblokApi.get(`cdn/stories/${slug}`, { version: 'draft' });
 }

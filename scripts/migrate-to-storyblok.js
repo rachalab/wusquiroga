@@ -6,6 +6,7 @@ const fetch = require('node-fetch');
 const mime = require('mime-types');
 
 const { COMPONENT_MAPPING, COMPONENT_SCHEMAS } = require('./storyblok-config');
+const { htmlToStoryblokRichtext } = require('@storyblok/richtext/html-parser');
 
 dotenv.config();
 
@@ -107,7 +108,7 @@ async function findLinkedAsset(url) {
 
     if (metadata) {
         if (metadata.originalFilename) {
-            targetFilename = metadata.originalFilename.replace(' ', '-');
+            targetFilename = metadata.originalFilename.toLowerCase().replace(' ', '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         } else if (metadata.id && metadata.extension) {
             targetFilename = `${metadata.id}.${metadata.extension}`;
         }
@@ -167,8 +168,16 @@ async function findLinkedAsset(url) {
                 const assetData = {
                     id: match.id,
                     filename: match.filename,
-                    fieldtype: 'asset'
+                    fieldtype: 'asset',
+                    alt: match.alt,
+                    title: match.title,
+                    copyright: match.copyright,
+                    focus: match.focus,
+                    name: match.name || '',
+                    meta_data: match.meta_data,
+                    source: match.source
                 };
+                console.log(assetData)
                 assetCache.set(targetFilename, assetData);
                 return assetData;
             }
@@ -226,8 +235,11 @@ async function transformBlock(block) {
 
     // Specific manual mapping overrides if needed (e.g. for slightly different field names)
     if (builderName === 'TwoColText') {
-        bloks.column1 = options.column1;
-        bloks.column2 = options.column2;
+        bloks.column1 = htmlToStoryblokRichtext(options.column1 || '');
+        bloks.column2 = htmlToStoryblokRichtext(options.column2 || '');
+    }
+    if (builderName === 'Quote') {
+        bloks.text = htmlToStoryblokRichtext(options.text || '');
     }
     if (builderName === 'Audio') {
         bloks.title = options.title;
@@ -250,7 +262,7 @@ async function transformBlock(block) {
                         const newTitle = lines.join(': ');
                         await updateAssetMetadata(linkedAsset.id, { title: newTitle });
                     }
-                    imageAssets.push(linkedAsset.id);
+                    imageAssets.push(linkedAsset);
                 }
             }
         }
@@ -259,7 +271,7 @@ async function transformBlock(block) {
             // Returning array of objects to be safe if client expects it, or just IDs.
             // Documentation says array of objects { id, ... } or just IDs.
             // Let's use objects with id
-            bloks.images = imageAssets.map(id => ({ id }));
+            bloks.images = imageAssets;
         }
     }
 
@@ -278,7 +290,7 @@ async function transformBlock(block) {
         bloks.accordion = options.accordion.map(item => ({
             component: 'accordion_item',
             title: item.title,
-            text: item.text
+            text: htmlToStoryblokRichtext(item.text || '')
         }));
     }
 
@@ -287,7 +299,7 @@ async function transformBlock(block) {
         bloks.item = options.item.map(item => ({
             component: 'sheet_item',
             title: item.title,
-            text: item.text
+            text: htmlToStoryblokRichtext(item.text || '')
         }));
     }
 
@@ -366,10 +378,12 @@ async function transformProject(builderProject) {
     if (content.thumbnail) {
         thumbnail = await findLinkedAsset(content.thumbnail);
     }
-
+    const slug = builderProject.data.url ? builderProject.data.url.replace(/^\//, '') : builderProject.id;
     return {
         name: content.title || builderProject.name || 'Untitled',
-        slug: builderProject.data.url ? builderProject.data.url.replace(/^\//, '') : builderProject.id,
+        slug: slug,
+        full_slug: 'proyectos/' + slug,
+        parent_id: 129507083187208,
         content: {
             component: 'project',
             thumbnail: thumbnail,
@@ -380,6 +394,7 @@ async function transformProject(builderProject) {
 
 // Main Migration Function
 async function migrate() {
+    let count = 0;
     console.log('Starting migration...');
     //return null;
 
@@ -395,16 +410,19 @@ async function migrate() {
             const storyblokStory = await transformProject(project);
             if (storyblokStory) {
                 await createStory(storyblokStory);
-                process.exit(0);
+                count++;
                 // Removed return null to process ALL pages
             }
         } catch (e) {
             console.error(`Failed during processing project ${project.name}`, e);
         }
         //return null;
+        if (count >= 2) {
+            break;
+        }
     }
 
-    console.log('Migration completed.');
+    console.log(`Migration completed. ${count} pages migrated.`);
 }
 
 migrate();

@@ -3,11 +3,9 @@ import { storyblokEditable, renderRichText } from "@storyblok/react";
 import styles from './Quote.module.scss';
 
 function Quote({ blok }) {
-  const text = renderRichText(blok.text);
-
   return (
     <blockquote {...storyblokEditable(blok)} className={styles.Quote}>
-      <div dangerouslySetInnerHTML={{ __html: text }} />
+      <p dangerouslySetInnerHTML={{ __html: renderRichText(blok.text) }} />
     </blockquote>
   );
 }
