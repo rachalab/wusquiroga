@@ -1,93 +1,93 @@
 @use '@styles/variables' as *;
+@use '@styles/mixins' as *;
 
-.sheet
-{
-    border: 1px solid var(--fore-color);
+.sheet {
+    @include box;
+
 }
 
 
 
-.sheetTitle
-{
-    border-bottom: 1px solid var(--fore-color);
-    color: var(--fore-color);
-    font-size: $font-size-4;
-    font-weight: 700;
-    line-height: 80%;
-    padding: $s2;
-}
-
-.sheetItems,.sheetItemsModal
-{
-    @media screen and (min-width: 990px) {
+.sheetItems,
+.sheetItemsModal {
+    @media screen and (min-width: 768px) {
         column-count: 4;
     }
-    .sheetItem{
+
+    .sheetItem {
         break-inside: avoid;
         margin-bottom: $s2;
-        p{
+
+        p {
             font-size: $font-size-small;
             line-height: 120%;
-                  color: var(--fore-color);
+            color: var(--fore-color);
+            padding: 0 !important;
+            letter-spacing: normal !important;
+            line-height: 120%;
+            font-weight: normal;
 
         }
-        h5{
-          font-family: var(--font-chivo);
-          font-size: $font-size-small;
-          text-transform: uppercase;
-          font-weight: bold;
-          margin-bottom: $s4;
-          color: var(--fore-color);
+
+        h5 {
+            font-family: var(--font-chivo);
+            font-size: $font-size-small;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: $s4;
+            color: var(--fore-color);
+            letter-spacing: normal !important;
+            line-height: 120%;
+
 
         }
 
     }
-    
-    
+
+
 }
-.sheetItems
-{
+
+.sheetItems {
     padding: $s2;
-}   
- 
+}
+
 
 .showMoreButton {
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-top: 1rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
 }
 
 
 .modalItems {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
-.sheetContent
-{
+.sheetContent {
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 990px) {
-         display: grid;
+    @media screen and (min-width: 768px) {
+        display: grid;
         grid-template-columns: 80% 20%;
     }
-   
-    
+
+
 }
 
-.cta{
-   
+.cta {
+
     border-left: 1px solid var(--fore-color);
     display: flex;
     align-items: center;
     justify-content: center;
 
-    button{
+    button {
         border: none;
         border-radius: none;
         background: transparent;
@@ -96,7 +96,8 @@
         color: var(--fore-color);
         text-transform: uppercase;
         text-align: center;
-        &:hover{
+
+        &:hover {
             text-decoration: underline;
         }
     }

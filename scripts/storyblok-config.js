@@ -184,7 +184,8 @@ const COMPONENT_SCHEMAS = {
         schema: {
             title: { type: 'text' },
             url: { type: 'text' },
-            file: { type: 'asset' }
+            file: { type: 'asset' },
+            image: { type: 'asset' }
         },
         is_nestable: true
     },

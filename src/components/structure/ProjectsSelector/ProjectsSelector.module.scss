@@ -1,75 +1,86 @@
 @use '@styles/variables' as *;
 @use '@styles/mixins' as *;
 
-.projects
-{
+.projects {
     z-index: 80000;
     margin: 0;
     padding: 0;
     list-style: none;
-    li{
+
+    li {
         overflow: hidden;
         list-style: none;
         padding: $s1 $s1 0 $s1;
-        h3{
+
+        h3 {
             font-size: $font-size-4;
             font-weight: 400;
             display: inline-block;
             letter-spacing: 0;
             margin-bottom: $s2;
-            strong{
+
+            strong {
                 margin-right: $s4;
                 font-weight: 400;
                 display: inline-block;
                 text-transform: uppercase;
             }
-           
+
         }
-        span{
+
+        span {
             height: 40vw;
 
-            @media screen and (min-width: 900px) {
-                    height: 20vw;
+            @media screen and (min-width: 768px) {
+                height: 20vw;
             }
+
             display: block;
             background-color: $black;
         }
-        img{
+
+        img {
             display: block;
             width: 100%;
             object-fit: cover;
             height: 40vw;
 
-            @media screen and (min-width: 900px) {
+            @media screen and (min-width: 768px) {
                 height: 20vw;
             }
 
         }
-        &:nth-child(3n + 1) 
-        {
+
+        &:nth-child(3n + 1) {
             background-color: $white;
-            h3{
+
+            h3 {
                 color: $black !important;
+
                 strong {
                     color: $blue !important;
                 }
             }
         }
-        &:nth-child(3n + 2) 
-        {
+
+        &:nth-child(3n + 2) {
             background-color: $gray-light;
-            h3{
+
+            h3 {
                 color: $black !important;
+
                 strong {
                     color: $blue !important;
                 }
             }
         }
-        &:nth-child(3n + 0) 
-        {
+
+        &:nth-child(3n + 0) {
             background-color: $blue;
-            h3{
+
+            h3 {
                 color: $black !important;
+
                 strong {
                     color: $white !important;
                 }

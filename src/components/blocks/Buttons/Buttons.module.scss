@@ -1,0 +1,66 @@
+@use '@styles/mixins' as *;
+@use '@styles/variables' as *;
+
+.buttons {
+    display: flex;
+    gap: $s2;
+    width: 100%;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    .button {
+        display: flex;
+        padding: $s2 ;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-align: center;
+        font-weight: bold;
+        font-size: $font-size-4;
+
+        &.primary {
+
+
+            border: 1px solid $blue;
+            color: $white;
+            background-color: $blue;
+
+            &:hover {
+                color: $blue;
+                background-color: $white;
+            }
+
+        }
+
+        &.secondary {
+
+
+            border: 1px solid $blue;
+            color: $blue;
+            background-color: $white;
+
+            &:hover {
+                color: $blue;
+                background-color: $white;
+            }
+
+        }
+
+        &.tertiary {
+
+
+            border: 1px solid $white;
+            color: $blue;
+            background-color: $white;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+        }
+    }
+}

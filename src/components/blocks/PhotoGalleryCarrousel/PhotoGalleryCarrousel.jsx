@@ -4,11 +4,12 @@ import { Navigation } from "swiper/modules";
 import Triangle from "@components/atoms/Triangle/Triangle";
 import styles from "./PhotoGalleryCarrousel.module.scss";
 import colorSchemas from "@styles/colorSchemas.module.scss";
+import { storyblokEditable } from "@storyblok/react";
 
-function PhotoGalleryCarrousel({ title, images, colorschema }) {
+function PhotoGalleryCarrousel(blok) {
   return (
-    <div className={`${styles.gallery} ${colorSchemas[colorschema]}`}>
-      <h3>{title}</h3>
+    <div {...storyblokEditable(blok)} className={`${styles.gallery} ${colorSchemas[blok?.colorschema]}`}>
+      <h3>{blok.title}</h3>
       <div className={styles.controls}>
         <div className={styles.prev}>
           <Triangle angle={-90} />
@@ -28,8 +29,8 @@ function PhotoGalleryCarrousel({ title, images, colorschema }) {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        {images?.map((img, index) => (
-          <SwiperSlide key={index}>
+        {blok.images?.map((img, index) => (
+          <SwiperSlide key={index} {...storyblokEditable(img)}>
             {img.file && (
               <img
                 src={img.file}

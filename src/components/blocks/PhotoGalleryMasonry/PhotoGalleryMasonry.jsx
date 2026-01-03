@@ -1,18 +1,18 @@
 "use client";
 import styles from "./PhotoGalleryMasonry.module.scss";
 import colorSchemas from "@styles/colorSchemas.module.scss";
+import { storyblokEditable } from "@storyblok/react";
 
-function PhotoGalleryMasonry({ title, images, colorschema }) {
+function PhotoGalleryMasonry(blok) {
 
-  console.log(images)
-
+  console.log(blok);
   return (
-    <div className={`${styles.gallery} ${colorSchemas[colorschema]}`}>
-      {title && <h3 className={styles.title}>{title}</h3>}
+    <div {...storyblokEditable(blok)} className={`${styles.gallery} ${colorSchemas[blok?.colorschema]}`}>
+      {blok?.title && <h3 className={styles.title}>{blok.title}</h3>}
 
       <div className={styles.photos}>
-        {images?.map((img, index) => (
-          <div className={styles.image} key={index}>
+        {blok?.images?.map((img, index) => (
+          <div className={styles.image} key={index} {...storyblokEditable(img)}>
             {img.file && (
               <img src={img.file} alt={img.alt || img.title || `image-${index}`} />
             )}

@@ -1,25 +1,24 @@
 @use '@styles/variables' as *;
 
-@mixin box{
+@mixin box {
 
     background-color: var(--box-background-color);
-    border: 1px solid  var(--box-border-color);
+    border: 1px solid var(--box-border-color);
 
-    h3{
-       font-size: $font-size-3;
-       padding: $s3;
-       border-bottom: 1px solid var(--box-fore-color);
-       color: var(--box-fore-color);
+    h3 {
+        font-size: $font-size-3;
+        padding: $s3;
+        border-bottom: 1px solid var(--box-fore-color);
+        color: var(--box-fore-color);
     }
 
-    p{
+    p {
         padding: $s3;
         color: $white;
         font-size: $font-size-small;
-        font-weight: 100;
         color: var(--box-fore-color);
-        strong
-        {
+
+        strong {
             font-weight: 600;
             text-transform: uppercase;
             margin-right: $s4;
@@ -30,8 +29,7 @@
 
 
 
-@mixin button-primary
-{
+@mixin button-primary {
     text-transform: uppercase;
     border: 1px solid $white;
     display: inline-block;
@@ -41,15 +39,15 @@
     color: $blue;
     background-color: $white;
     text-align: center;
-    &:hover{
+
+    &:hover {
         color: $white;
         background-color: $blue;
     }
 }
 
 
-@mixin button-secondary
-{
+@mixin button-secondary {
     text-transform: uppercase;
     border: 1px solid $white;
     padding: $s4 $s3;
@@ -59,42 +57,41 @@
     text-align: center;
     color: $white;
     transition: all 0.1s ease;
-    &:hover{
+
+    &:hover {
         color: $blue;
         background-color: $white;
     }
 }
 
 
-@mixin button-tertiary
-{
+@mixin button-tertiary {
     text-transform: uppercase;
     padding: $s4 $s3;
     display: inline-block;
     text-align: center;
     font-size: $font-size-small;
     text-decoration: underline;
-    text-underline-offset: 0.2em; 
+    text-underline-offset: 0.2em;
     color: $blue;
     transition: all 0.2s ease;
-    &:hover{
-          text-decoration-color: rgba(73, 124, 252,0)
 
-
+    &:hover {
+        text-decoration-color: rgba(73, 124, 252, 0)
     }
 }
 
 
-@mixin link
-{
+@mixin link {
     text-transform: uppercase;
     display: inline-block;
     font-size: $font-size-small;
     text-decoration: underline;
-    text-underline-offset: 0.2em; 
+    text-underline-offset: 0.2em;
     color: $blue;
     transition: all 0.2s ease;
-    &:hover{
-          text-decoration-color: rgba(73, 124, 252,0)
+
+    &:hover {
+        text-decoration-color: rgba(73, 124, 252, 0)
     }
 }

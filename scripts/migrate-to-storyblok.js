@@ -29,7 +29,7 @@ const sanitizeKey = (key) => key.toLowerCase().replace(/[^a-z0-9]/g, '_');
 
 // 1. Fetch content from Builder.io
 async function fetchBuilderContent(modelName = 'page') {
-    const url = `https://cdn.builder.io/api/v2/content/${modelName}?apiKey=${builderApiKey}&limit=100`;
+    const url = `https://cdn.builder.io/api/v2/content/${modelName}?apiKey=${builderApiKey}&limit=50`;
     console.log(`Fetching content from Builder.io: ${url}`);
     try {
         const res = await fetch(url);
@@ -72,6 +72,7 @@ async function updateAssetMetadata(assetId, meta) {
 
 // Cache results to avoid repeated API calls
 const assetCache = new Map();
+const migrationLog = [];
 
 // Load Asset Metadata
 let assetMetadata = {};
@@ -108,7 +109,7 @@ async function findLinkedAsset(url) {
 
     if (metadata) {
         if (metadata.originalFilename) {
-            targetFilename = metadata.originalFilename.toLowerCase().replace(' ', '-').normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            targetFilename = metadata.originalFilename.toLowerCase().replaceAll(' ', '-').normalize("NFD").replaceAll(/[\u0300-\u036f]/g, ""); //Force space deletion
         } else if (metadata.id && metadata.extension) {
             targetFilename = `${metadata.id}.${metadata.extension}`;
         }
@@ -177,7 +178,6 @@ async function findLinkedAsset(url) {
                     meta_data: match.meta_data,
                     source: match.source
                 };
-                console.log(assetData)
                 assetCache.set(targetFilename, assetData);
                 return assetData;
             }
@@ -202,7 +202,7 @@ async function transformBlock(block) {
     // if (builderName != 'SideA' && builderName != 'SideB' && builderName != 'Audio') {
     //    return null;
     // }
-    const storyblokName = COMPONENT_MAPPING[builderName];
+    let storyblokName = COMPONENT_MAPPING[builderName];
 
     if (!storyblokName) {
         console.warn(`Unknown component: ${builderName}. Skipping or handling as raw HTML if possible.`);
@@ -239,7 +239,7 @@ async function transformBlock(block) {
         bloks.column2 = htmlToStoryblokRichtext(options.column2 || '');
     }
     if (builderName === 'Quote') {
-        bloks.text = htmlToStoryblokRichtext(options.text || '');
+        bloks.text = options.text;
     }
     if (builderName === 'Audio') {
         bloks.title = options.title;
@@ -305,6 +305,7 @@ async function transformBlock(block) {
 
     // LinksList: Transform array of objects to link_item bloks
     if (builderName === 'LinksList' && options.links && Array.isArray(options.links)) {
+
         const linkBloks = [];
         for (const link of options.links) {
             const item = {
@@ -322,10 +323,11 @@ async function transformBlock(block) {
 
     // FilesList: Transform array of objects to file_item bloks
     if (builderName === 'FilesList' && options.links && Array.isArray(options.links)) {
+        storyblokName = 'links_list'; // Force links_list
         const fileBloks = [];
         for (const link of options.links) {
             const item = {
-                component: 'file_item',
+                component: 'link_item',
                 title: link.title,
                 url: link.url
             };
@@ -409,17 +411,29 @@ async function migrate() {
 
             const storyblokStory = await transformProject(project);
             if (storyblokStory) {
-                await createStory(storyblokStory);
-                count++;
-                // Removed return null to process ALL pages
+                const createdStory = await createStory(storyblokStory);
+                if (createdStory) {
+                    count++;
+                    migrationLog.push({
+                        title: project.name,
+                        slug: storyblokStory.slug,
+                        full_slug: storyblokStory.full_slug
+                    });
+                }
             }
         } catch (e) {
             console.error(`Failed during processing project ${project.name}`, e);
+            process.exit(1);
         }
-        //return null;
-        if (count >= 2) {
-            break;
-        }
+    }
+
+    // Save migration log
+    try {
+        const logPath = 'scripts/migrated-projects.json';
+        fs.writeFileSync(logPath, JSON.stringify(migrationLog, null, 2));
+        console.log(`Migration log saved to ${logPath}`);
+    } catch (e) {
+        console.error('Failed to save migration log:', e.message);
     }
 
     console.log(`Migration completed. ${count} pages migrated.`);

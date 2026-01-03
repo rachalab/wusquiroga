@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import styles from "./PhotoGallerySlideshow.module.scss"; // Import the SCSS module
 import colorSchemas from "@styles/colorSchemas.module.scss";
 
-function PhotoGallerySlideshow({ title, images, colorschema }) {
+function PhotoGallerySlideshow(blok) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
   const imageRef = useRef(null);
@@ -24,7 +24,7 @@ function PhotoGallerySlideshow({ title, images, colorschema }) {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [currentIndex, images.length]);
+  }, [currentIndex, blok.images.length]);
 
   // GSAP animation for fade effect
   useEffect(() => {
@@ -50,31 +50,31 @@ function PhotoGallerySlideshow({ title, images, colorschema }) {
         }
       };
     }
-  }, [images]);
+  }, [blok.images]);
 
   // Pre-load images for smoother transitions
   useEffect(() => {
-    images.forEach((image) => {
+    blok.images.forEach((image) => {
       if (image.file) {
         const img = new Image();
         img.src = image.file;
       }
     });
-  }, [images]);
+  }, [blok.images]);
 
-  if (!images || images.length === 0) {
+  if (!blok.images || blok.images.length === 0) {
     return <p>No images to display.</p>;
   }
 
-  const currentImage = images[currentIndex];
+  const currentImage = blok.images[currentIndex];
 
   return (
     <div
-      className={`${styles.gallery} ${colorSchemas[colorschema]}`}
+      className={`${styles.gallery} ${colorSchemas[blok.colorschema]}`}
       ref={galleryRef}
       style={{ height: initialHeight ? `${initialHeight}px` : "auto" }}
     >
-      {title && <h3>{title}</h3>}
+      {blok.title && <h3>{blok.title}</h3>}
 
       <div className={styles.photos}>
         {/* Slideshow Image */}

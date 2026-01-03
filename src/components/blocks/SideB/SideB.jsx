@@ -8,11 +8,20 @@ function SideB({ blok }) {
   const blocks = blok.blocks || [];
 
   return (
-    <div {...storyblokEditable(blok)} className={styles.SideB}>
-      <div className={styles.sticky}>
-        {blocks.map((nestedBlok) => (
-          <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
-        ))}
+    <div {...storyblokEditable(blok)}>
+      <div className={styles.sideB}>
+        <div className={styles.header}>
+          <h2>Lado</h2>
+          <h3>
+            <strong>B</strong>
+          </h3>
+        </div>
+
+        <div className={styles.content}>
+          {blocks.map((nestedBlok) => (
+            <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
+          ))}
+        </div>
       </div>
     </div>
   );

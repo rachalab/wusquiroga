@@ -17,12 +17,12 @@ function Sheet({ blok }) {
 
   return (
     <div {...storyblokEditable(blok)} className={`${styles.sheet} ${colorSchemas[colorschema]}`}>
-      {title && <h3 className={styles.sheetTitle}>{title}</h3>}
+      {title && <h3 >{title}</h3>}
       <div className={styles.sheetContent}>
         <div className={styles.sheetItems}>
           {visibleItems?.length > 0 &&
             visibleItems.map((entry, index) => (
-              <div key={index} className={styles.sheetItem}>
+              <div key={index} {...storyblokEditable(entry)} className={styles.sheetItem}>
                 <h5>{entry.title}</h5>
                 <div dangerouslySetInnerHTML={{ __html: renderRichText(entry.text) }} />
               </div>

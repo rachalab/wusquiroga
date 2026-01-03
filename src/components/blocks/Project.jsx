@@ -4,7 +4,6 @@ import {
 } from '@storyblok/react/rsc';
 
 export default function Project({ blok }) {
-    console.log(blok);
     return (
         <main>
             {blok.body?.map((nestedBlok) => (

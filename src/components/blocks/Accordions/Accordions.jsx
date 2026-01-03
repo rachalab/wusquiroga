@@ -11,7 +11,6 @@ function Accordions({ blok }) {
     setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
   };
 
-  console.log(blok)
 
   return (
     <div {...storyblokEditable(blok)} className={styles.accordions}>
