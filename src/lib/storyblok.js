@@ -28,7 +28,6 @@ export const storyblokComponents = {
     quote: Quote,
     sheet: Sheet,
     links_list: LinksList,
-    files_list: FilesList,
     buttons: Buttons,
     pdf: PDF,
     embed_pdf: EmbedPDF,
