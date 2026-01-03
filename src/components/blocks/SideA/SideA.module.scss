@@ -1,0 +1,13 @@
+@use '@styles/variables' as *;
+
+.sideA {
+    --fore-color: #{$black};
+    --background-color: #{$white};
+    padding: 0 $s1 0 $s1;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    gap: $s1;
+
+
+}

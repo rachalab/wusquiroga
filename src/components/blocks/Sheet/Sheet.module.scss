@@ -1,0 +1,107 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.sheet {
+    @include box;
+
+    h3 {
+        border-bottom: 1px solid var(--fore-color);
+    }
+}
+
+
+
+.sheetItems,
+.sheetItemsModal {
+    @media screen and (min-width: 768px) {
+        column-count: 4;
+    }
+
+    .sheetItem {
+        break-inside: avoid;
+        margin-bottom: $s2;
+
+        p {
+            font-size: $font-size-small;
+            line-height: 120%;
+            color: var(--fore-color);
+            padding: 0 !important;
+            letter-spacing: normal !important;
+            line-height: 120%;
+            font-weight: normal;
+
+        }
+
+        h5 {
+            font-family: var(--font-chivo);
+            font-size: $font-size-small;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: $s4;
+            color: var(--fore-color);
+            letter-spacing: normal !important;
+            line-height: 120%;
+
+
+        }
+
+    }
+
+
+}
+
+.sheetItems {
+    padding: $s2;
+}
+
+
+.showMoreButton {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+
+.modalItems {
+    margin-top: 1rem;
+}
+
+.sheetContent {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        grid-template-columns: 80% 20%;
+    }
+
+
+}
+
+.cta {
+
+    border-left: 1px solid var(--fore-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        border: none;
+        border-radius: none;
+        background: transparent;
+        font-family: var(--chivo);
+        font-size: $font-size-small;
+        color: var(--fore-color);
+        text-transform: uppercase;
+        text-align: center;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

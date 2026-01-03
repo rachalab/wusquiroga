@@ -1,10 +1,9 @@
 import { Chivo } from "next/font/google";
 import Menu from "@components/structure/Menu/Menu";
 import SmoothScroll from "@components/structure/SmoothScroll/SmoothScroll";
+import StoryblokProvider from "@components/StoryblokProvider";
 import "../styles/globals.scss";
 import "lenis/dist/lenis.css";
-
-
 
 const chivo = Chivo({
   variable: "--font-chivo",
@@ -20,10 +19,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={chivo.variable}>
-        <SmoothScroll>
-          <Menu />
-          {children}
-        </SmoothScroll>
+        <StoryblokProvider>
+          <SmoothScroll>
+            <Menu />
+            {children}
+          </SmoothScroll>
+        </StoryblokProvider>
       </body>
     </html>
   );

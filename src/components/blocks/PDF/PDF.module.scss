@@ -1,0 +1,61 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.PDF {
+    @include box;
+    position: relative;
+
+    h3 {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+    .pages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #fff;
+    }
+
+    .controls {
+        position: absolute;
+        right: $s5;
+        top: $s5;
+        display: flex;
+
+
+    }
+
+    .page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .next {
+        cursor: pointer;
+    }
+
+
+    .prev {
+        cursor: pointer;
+    }
+
+    .PDFDownload {
+        border-top: 1px solid var(--box-border-color);
+        padding: $s5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            @include link;
+        }
+
+    }
+
+}

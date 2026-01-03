@@ -1,0 +1,43 @@
+@use '@styles/variables' as *;
+
+.sideB {
+    --fore-color: #{$white};
+    --background-color: #{$black};
+    padding: $s1;
+    background: var(--background-color);
+    gap: $s1;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        text-align: center;
+
+        h2 {
+            font-size: $s1;
+            letter-spacing: $s2;
+            color: $blue;
+            text-transform: uppercase;
+
+            span {
+                letter-spacing: 0;
+            }
+
+        }
+
+        h3 {
+
+            font-size: clamp(40px, 60vw, 60vw);
+            line-height: clamp(40px, 50vw, 50vw);
+            text-align: center;
+            letter-spacing: 0;
+            color: $blue;
+
+        }
+    }
+
+    .content {
+        gap: $s1;
+        display: flex;
+        flex-direction: column;
+    }
+}

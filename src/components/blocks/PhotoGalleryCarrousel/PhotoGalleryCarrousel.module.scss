@@ -1,0 +1,34 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.gallery {
+    @include box;
+    position: relative;
+
+    h3 {
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+
+    }
+
+    .controls {
+        position: absolute;
+        right: $s5;
+        top: $s5;
+        display: flex;
+
+    }
+
+    .next {
+        cursor: pointer;
+    }
+
+
+    .prev {
+        cursor: pointer;
+    }
+
+}

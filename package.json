@@ -4,23 +4,29 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:https": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "node scripts/migrate-to-storyblok.js"
   },
   "dependencies": {
-    "@builder.io/dev-tools": "^1.6.72",
-    "@builder.io/react": "^8.2.2",
-    "@builder.io/sdk": "^6.0.9",
+    "@storyblok/react": "^5.4.20",
+    "@storyblok/richtext": "^3.8.2",
+    "dotenv": "^17.2.3",
+    "form-data": "^4.0.5",
     "gsap": "^3.13.0",
     "lenis": "^1.3.4",
+    "mime-types": "^3.0.2",
     "next": "15.3.3",
+    "node-fetch": "^2.7.0",
     "pdfjs-dist": "4.8.69",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-h5-audio-player": "^3.10.0",
     "react-pdf": "^9.2.1",
     "sass": "^1.89.2",
+    "storyblok-js-client": "^7.2.1",
     "swiper": "^11.2.8"
   }
 }

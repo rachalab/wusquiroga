@@ -1,35 +1,31 @@
-import { builder } from "@builder.io/sdk";
+import { getStoryblokApi } from '@/lib/storyblok';
 import ProjectsSelector from "@components/structure/ProjectsSelector/ProjectsSelector";
 
-builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
-
 export default async function Projects({ categoryId, organizationId }) {
-  let projects;
+  const storyblokApi = getStoryblokApi();
+  let stories = [];
 
-  // Obtener los proyectos según filtro
-  if (categoryId) {
-    projects = await builder.getAll("project", {
-      query: {
-        data: { category: { id: categoryId } },
-      },
-      options: { noTargeting: true, enrich: true },
+  try {
+    const { data } = await storyblokApi.get(`cdn/stories`, {
+      version: "draft",
+      starts_with: "proyectos/",
+      content_type: "project",
     });
-  } else if (organizationId) {
-    const allProjects = await builder.getAll("project", {
-      options: { noTargeting: true, enrich: true },
-    });
-
-    projects = allProjects.filter((p) =>
-      p.data.organizations?.some(
-        (org) => org.organization?.Default?.id === organizationId
-      )
-    );
-  } else {
-    projects = await builder.getAll("project", {
-      options: { noTargeting: true,enrich:true },
-    });
+    stories = data.stories;
+  } catch (error) {
+    console.error("Error fetching projects from Storyblok:", error);
   }
 
+  // Adapter to match ProjectsSelector expectations
+  const projects = stories.map((s) => ({
+    id: s.uuid,
+    data: {
+      url: `/${s.full_slug}`,
+      title: s.name,
+      thumbnail: s.content?.thumbnail?.filename,
+      organizations: [], // Logic for organizations/categories would go here if migrated
+    },
+  }));
 
   return (
     <div className="accordions-block">

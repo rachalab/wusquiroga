@@ -1,0 +1,7 @@
+@use '@styles/variables' as *;
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: $s1;
+}
