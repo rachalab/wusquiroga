@@ -15,7 +15,7 @@ function PhotoGalleryMasonry({ blok }) {
           const epigraph = img.title ? img.title.split(":") : [];
 
           return (
-            <div className={styles.image} key={index} {...storyblokEditable(img)}>
+            <div className={styles.image} key={index}>
               {img.filename && (
                 <img src={img.filename} alt={img.alt || img.title || `image-${index}`} />
               )}

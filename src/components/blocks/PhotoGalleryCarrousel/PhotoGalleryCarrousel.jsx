@@ -6,7 +6,7 @@ import styles from "./PhotoGalleryCarrousel.module.scss";
 import colorSchemas from "@styles/colorSchemas.module.scss";
 import { storyblokEditable } from "@storyblok/react";
 
-function PhotoGalleryCarrousel(blok) {
+function PhotoGalleryCarrousel({ blok }) {
   return (
     <div {...storyblokEditable(blok)} className={`${styles.gallery} ${colorSchemas[blok?.colorschema]}`}>
       <h3>{blok.title}</h3>
@@ -29,28 +29,28 @@ function PhotoGalleryCarrousel(blok) {
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        {blok.images?.map((img, index) => (
-          <SwiperSlide key={index} {...storyblokEditable(img)}>
-            {img.file && (
-              <img
-                src={img.file}
-                alt={img.alt || img.title || `image-${index}`}
-                download="test.jpg"
-              />
-            )}
-            {(img.line1 || img.line2) && (
-              <p>
-                {img.line1 && <strong>{img.line1}</strong>}
-                {img.line2 && (
-                  <>
-                    <br />
-                    {img.line2}
-                  </>
-                )}
-              </p>
-            )}
-          </SwiperSlide>
-        ))}
+        {blok.images?.map((img, index) => {
+          const epigraph = img.title ? img.title.split(":") : [];
+
+          return (
+            <SwiperSlide key={index}>
+              {img.filename && (
+                <img src={img.filename} alt={img.alt || img.title || `image-${index}`} />
+              )}
+              {epigraph.length > 1 ? (
+                <p>
+                  <strong>{epigraph[0]}</strong>
+                  {epigraph[1] && ` ${epigraph[1]}`}
+                </p>
+              ) :
+                (
+                  <p>{img.title}</p>
+                )
+
+              }
+            </SwiperSlide>
+          )
+        })}
       </Swiper>
     </div>
   );

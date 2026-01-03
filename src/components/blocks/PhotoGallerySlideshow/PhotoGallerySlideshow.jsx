@@ -1,10 +1,11 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
+import { storyblokEditable } from "@storyblok/react";
 import { gsap } from "gsap";
 import styles from "./PhotoGallerySlideshow.module.scss"; // Import the SCSS module
 import colorSchemas from "@styles/colorSchemas.module.scss";
 
-function PhotoGallerySlideshow(blok) {
+function PhotoGallerySlideshow({ blok }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
   const imageRef = useRef(null);
@@ -15,7 +16,7 @@ function PhotoGallerySlideshow(blok) {
   useEffect(() => {
     timeoutRef.current = setTimeout(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        prevIndex === blok.images.length - 1 ? 0 : prevIndex + 1
       );
     }, 5000); // Change image every 5 seconds
 
@@ -39,9 +40,9 @@ function PhotoGallerySlideshow(blok) {
 
   // Set initial height based on the first image
   useEffect(() => {
-    if (images && images.length > 0 && galleryRef.current) {
+    if (blok.images && blok.images.length > 0 && galleryRef.current) {
       const img = new Image();
-      img.src = images[0].file;
+      img.src = blok.images[0].filename;
       img.onload = () => {
         // Set the height of the gallery container based on the first image's natural height
         // This assumes the image will take 100% width, so height will scale proportionally
@@ -55,9 +56,9 @@ function PhotoGallerySlideshow(blok) {
   // Pre-load images for smoother transitions
   useEffect(() => {
     blok.images.forEach((image) => {
-      if (image.file) {
+      if (image.filename) {
         const img = new Image();
-        img.src = image.file;
+        img.src = image.filename;
       }
     });
   }, [blok.images]);
@@ -70,6 +71,7 @@ function PhotoGallerySlideshow(blok) {
 
   return (
     <div
+      {...storyblokEditable(blok)}
       className={`${styles.gallery} ${colorSchemas[blok.colorschema]}`}
       ref={galleryRef}
       style={{ height: initialHeight ? `${initialHeight}px` : "auto" }}
@@ -78,27 +80,17 @@ function PhotoGallerySlideshow(blok) {
 
       <div className={styles.photos}>
         {/* Slideshow Image */}
-        {currentImage && currentImage.file && (
+        {currentImage && currentImage.filename && (
           <div className={styles.imageContainer} style={{ position: 'relative', width: '100%', height: '100%' }}>
             <img
               ref={imageRef}
               key={currentIndex}
-              src={currentImage.file}
+              src={currentImage.filename}
               alt={currentImage.alt || currentImage.title || `slideshow-image-${currentIndex}`}
               className={styles.slideshowImage}
               style={{ objectFit: "cover", width: "100%", height: "100%" }} // Ensure image covers the container
             />
-            {(currentImage.line1 || currentImage.line2) && (
-              <div className={styles.overlay} style={{ position: 'absolute', bottom: 0, left: 0, padding: '1rem', background: 'rgba(0,0,0,0.5)', color: '#fff', width: '100%' }}>
-                {currentImage.line1 && <strong>{currentImage.line1}</strong>}
-                {currentImage.line2 && (
-                  <>
-                    <br />
-                    {currentImage.line2}
-                  </>
-                )}
-              </div>
-            )}
+
           </div>
         )}
       </div>

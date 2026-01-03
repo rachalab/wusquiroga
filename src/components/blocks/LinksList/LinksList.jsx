@@ -4,28 +4,36 @@ import styles from "./LinksList.module.scss";
 import colorSchemas from "@styles/colorSchemas.module.scss";
 
 function LinksList({ blok }) {
-  const { title, line1, line2, type, links, colorschema } = blok;
 
   return (
-    <div {...storyblokEditable(blok)} className={`${styles.links} ${colorSchemas[colorschema]}`}>
-      {title && <h3>{title}</h3>}
-      {(line1 || line2) && (
+    <div {...storyblokEditable(blok)} className={`${styles.links} ${colorSchemas[blok.colorschema]}`}>
+      {blok.title && <h3>{blok.title}</h3>}
+      {(blok.line1 || blok.line2) && (
         <p>
-          {line1 && <strong>{line1}</strong>}
-          {line2 && (
+          {blok.line1 && <strong>{blok.line1}</strong>}
+          {blok.line2 && (
             <>
               <br />
-              {line2}
+              {blok.line2}
             </>
           )}
         </p>
       )}
 
-      <ul>
-        {links?.map((link, index) => (
+      <ul className={blok.preview ? styles.typeImage : styles.typeText}>
+        {blok?.links?.map((link, index) => (
           <li key={index}>
-            <a href={link.url} target="_blank" rel="noopener noreferrer">
+            <a
+              href={link.url || link.file}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {blok.preview && link.image && (
+                <img src={link.image.filename} alt={link.image.title} />
+              )}
               {link.title}
+              <br />
+              <span>Descargar</span>
             </a>
           </li>
         ))}

@@ -1,4 +1,4 @@
-import { getStoryblokApi } from "@storyblok/react/rsc";
+import { getStoryblokApi } from '@/lib/storyblok';
 import ProjectsSelector from "@components/structure/ProjectsSelector/ProjectsSelector";
 
 export default async function Projects({ categoryId, organizationId }) {
@@ -8,7 +8,7 @@ export default async function Projects({ categoryId, organizationId }) {
   try {
     const { data } = await storyblokApi.get(`cdn/stories`, {
       version: "draft",
-      starts_with: "proyecto/",
+      starts_with: "proyectos/",
       content_type: "project",
     });
     stories = data.stories;

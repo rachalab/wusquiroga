@@ -28,7 +28,7 @@ function Accordions({ blok }) {
             >
               <h4>{item.title}</h4>
               <div className={styles.icon}>
-                <Triangle angle={isOpen ? 180 : 0} />
+                <Triangle angle={isOpen ? 0 : 180} />
               </div>
             </button>
             <div

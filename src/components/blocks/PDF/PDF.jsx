@@ -19,27 +19,30 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 function PDF({ blok }) {
-  const { title, pdf, embed, cta, max = 0, colorschema } = blok;
+
 
   const [numPages, setNumPages] = useState(null);
+  const [pagesToShow, setPagesToShow] = useState(0);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
+    setPagesToShow(blok.max == 0 ? numPages : Math.min(blok.max, numPages));
+
   }
 
   // Determina el número de páginas a mostrar
-  const pagesToShow = max === 0 ? numPages : Math.min(max, numPages);
+
 
   return (
-    <div {...storyblokEditable(blok)} className={`${styles.PDF} ${colorSchemas[colorschema]}`}>
-      {title && <h3>{title}</h3>}
-      {embed && (
+    <div {...storyblokEditable(blok)} className={`${styles.PDF} ${colorSchemas[blok.colorschema]}`}>
+      {blok.title && <h3>{blok.title}</h3>}
+      {blok.embed && (
         <div
           className={styles.PDFEmbed}
-          dangerouslySetInnerHTML={{ __html: embed }}
+          dangerouslySetInnerHTML={{ __html: blok.embed }}
         />
       )}
-      {pdf?.filename && (
+      {blok.pdf?.filename && (
         <div className={styles.PDFPDF}>
           {pagesToShow > 1 && (
             <div className={styles.controls}>
@@ -52,7 +55,7 @@ function PDF({ blok }) {
             </div>
           )}
           <Document
-            file={pdf.filename}
+            file={blok.pdf.filename}
             onLoadSuccess={onDocumentLoadSuccess}
             onLoadError={console.error}
             className={styles.pages}
@@ -80,8 +83,8 @@ function PDF({ blok }) {
             )}
           </Document>
           <div className={styles.PDFDownload}>
-            <a href={pdf.filename} target="_blank" rel="noopener noreferrer">
-              {cta || "Descargar PDF"}
+            <a href={blok.pdf.filename} target="_blank" rel="noopener noreferrer">
+              {blok.cta || "Descargar PDF"}
             </a>
           </div>
         </div>

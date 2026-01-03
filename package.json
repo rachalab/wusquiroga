@@ -11,9 +11,6 @@
     "migrate": "node scripts/migrate-to-storyblok.js"
   },
   "dependencies": {
-    "@builder.io/dev-tools": "^1.19.9",
-    "@builder.io/react": "^8.2.2",
-    "@builder.io/sdk": "^6.0.9",
     "@storyblok/react": "^5.4.20",
     "@storyblok/richtext": "^3.8.2",
     "dotenv": "^17.2.3",

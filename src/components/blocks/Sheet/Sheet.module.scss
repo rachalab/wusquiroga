@@ -4,6 +4,9 @@
 .sheet {
     @include box;
 
+    h3 {
+        border-bottom: 1px solid var(--fore-color);
+    }
 }
 
 

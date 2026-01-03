@@ -1,0 +1,10 @@
+@use '@styles/variables' as *;
+
+.Image {
+    margin: $s4 0;
+    width: 100%;
+
+    p {
+        margin: $s5 0;
+    }
+}
