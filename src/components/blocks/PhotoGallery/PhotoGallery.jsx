@@ -6,11 +6,11 @@ function PhotoGallery({ blok }) {
 
   switch (blok.format) {
     case "carrousel":
-      return <PhotoGalleryCarrousel block={blok} />;
+      return <PhotoGalleryCarrousel blok={blok} />;
     case "slideshow":
-      return <PhotoGallerySlideshow block={blok} />;
+      return <PhotoGallerySlideshow blok={blok} />;
     default:
-      return <PhotoGalleryMasonry block={blok} />;
+      return <PhotoGalleryMasonry blok={blok} />;
   }
 }
 
