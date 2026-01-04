@@ -24,24 +24,24 @@ export default function Navigation({ menuData }) {
   const MAX_LENGTH = 200;
 
   // Animación inicial del logo "W"
- useEffect(() => {
-  const element = menuWRef.current;
+  useEffect(() => {
+    const element = menuWRef.current;
 
-  const trigger = ScrollTrigger.create({
-    trigger: document.body,
-    start: "top -200",
-    onEnter: () => {
-      gsap.to(element, { x: 0, duration: 0.5, ease: "power2.out" });
-    },
-    onLeaveBack: () => {
-      gsap.to(element, { x: -200, duration:0.5, ease: "power2.in" });
-    }
+    const trigger = ScrollTrigger.create({
+      trigger: document.body,
+      start: "top -200",
+      onEnter: () => {
+        gsap.to(element, { x: 0, duration: 0.5, ease: "power2.out" });
+      },
+      onLeaveBack: () => {
+        gsap.to(element, { x: -200, duration: 0.5, ease: "power2.in" });
+      }
     });
 
-  return () => {
-    trigger.kill();
-  };
-}, []);
+    return () => {
+      trigger.kill();
+    };
+  }, []);
 
 
   // Función para abrir/cerrar el menú con animación y scroll lock
@@ -87,8 +87,8 @@ export default function Navigation({ menuData }) {
       <header className={styles.navigationHeader}>
         <h1>
           <Link href="/">Wustavo
-          <br />
-          Quiroga</Link>
+            <br />
+            Quiroga</Link>
         </h1>
       </header>
 
@@ -147,15 +147,15 @@ export default function Navigation({ menuData }) {
           </div>
           {/* Botones de llamado a la acción (CTAs) */}
           <ul className={styles.buttons}>
-            {menuData.ctas.map((menuCTA, key) => (
+            {menuData.buttons.map((menuCTA, key) => (
               <li key={key}>
-                <a href={menuCTA.url}>{menuCTA.cta}</a>
+                <a href={menuCTA.url} target="_blank">{menuCTA.title}</a>
               </li>
             ))}
           </ul>
         </nav>
 
-        
+
 
         {/* Botón para cerrar el menú */}
         <button className={styles.closeButton} onClick={toggleMenu}>

@@ -26,6 +26,7 @@ export default function Breadcrumb({ hierarchy = [] }) {
         <ol >
           {hierarchy.map((item, index) => (
             <li key={index} className="">
+              {index > 0 && <span className={styles.separator}>{item.separator || "/"}</span>}
               <Link href={item.url}>{item.title}</Link>
             </li>
           ))}

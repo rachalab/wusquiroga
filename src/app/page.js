@@ -1,6 +1,19 @@
 import { getStoryblokApi } from '@/lib/storyblok';
 import { StoryblokStory } from '@storyblok/react/rsc';
 
+export async function generateMetadata() {
+  const { data } = await fetchData();
+  const story = data.story;
+
+  return {
+    title: 'Wustavo Quiroga | Diseño argentino',
+    description: story.content.description,
+    openGraph: {
+      images: [story.content.preview?.filename],
+    },
+  };
+}
+
 export default async function Page() {
   const { data } = await fetchData();
 

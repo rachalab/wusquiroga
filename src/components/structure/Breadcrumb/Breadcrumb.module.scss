@@ -1,11 +1,10 @@
 @use '@styles/variables' as *;
 @use '@styles/mixins' as *;
 
-.breadcrumb
-{
+.breadcrumb {
     margin-bottom: $s1;
-    ol
-    {
+
+    ol {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -14,22 +13,23 @@
         font-size: $font-size-normal;
         text-transform: uppercase;
         color: $blue;
-        li{
+
+        li {
             margin: 0;
             padding: 0;
-            &:not(:first-child)::before{
-                content: "/";
+
+            .separator {
                 margin-right: $s5;
             }
 
-            a{
+            a {
                 color: $blue;
                 text-decoration: none;
 
-                &:hover{
+                &:hover {
                     text-decoration: underline;
 
-                } 
+                }
             }
         }
     }
