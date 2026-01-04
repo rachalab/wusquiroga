@@ -9,15 +9,14 @@ import { useState } from "react";
 import styles from "./Sheet.module.scss";
 
 function Sheet({ blok }) {
-  const { title, cta, viewmore: viewMore, item: items, colorschema } = blok;
 
-  const showMore = items?.length > 4;
-  const visibleItems = showMore ? items.slice(0, 4) : items;
+  const showMore = blok.items?.length > 4;
+  const visibleItems = showMore ? blok.items.slice(0, 4) : blok.items;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div {...storyblokEditable(blok)} className={`${styles.sheet} ${colorSchemas[colorschema]}`}>
-      {title && <h3 >{title}</h3>}
+    <div {...storyblokEditable(blok)} className={`${styles.sheet} ${colorSchemas[blok.colorschema]}`}>
+      {blok.title && <h3 >{blok.title}</h3>}
       <div className={styles.sheetContent}>
         <div className={styles.sheetItems}>
           {visibleItems?.length > 0 &&
@@ -29,19 +28,19 @@ function Sheet({ blok }) {
             ))}
         </div>
 
-        {viewMore && cta && (
+        {blok.viewmore && blok.cta && (
           <div className={styles.cta}>
-            <button onClick={() => setIsModalOpen(true)}>{cta}</button>
+            <button onClick={() => setIsModalOpen(true)}>{blok.cta}</button>
           </div>
         )}
       </div>
       <Modal
-        title={title}
+        title={blok.title}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       >
         <div className={styles.sheetItemsModal}>
-          {items?.length > 0 &&
+          {blok.items?.length > 0 &&
             items.map((entry, index) => (
               <div key={index} className={styles.sheetItem}>
                 <h5>{entry.title}</h5>

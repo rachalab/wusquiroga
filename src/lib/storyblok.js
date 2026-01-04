@@ -8,7 +8,8 @@ import TwoColText from "../components/blocks/TwoColText/TwoColText";
 import Quote from "../components/blocks/Quote/Quote";
 import Sheet from "../components/blocks/Sheet/Sheet";
 import LinksList from "../components/blocks/LinksList/LinksList";
-import FilesList from "../components/blocks/FilesList/FilesList";
+import Projects from "../components/blocks/Projects/Projects";
+import Marquee from "../components/blocks/Marquee/Marquee";
 import Buttons from "../components/blocks/Buttons/Buttons";
 import PDF from "../components/blocks/PDF/PDF";
 import EmbedPDF from "../components/blocks/EmbedPDF/EmbedPDF";
@@ -35,6 +36,8 @@ export const storyblokComponents = {
     side_a: SideA,
     side_b: SideB,
     image: Image,
+    projects: Projects,
+    marquee: Marquee,
 };
 
 

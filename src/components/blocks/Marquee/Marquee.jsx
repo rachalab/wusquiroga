@@ -9,7 +9,7 @@ import styles from "./Marquee.module.scss";
 // Registramos el plugin de ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Marquee({ text }) {
+export default function Marquee({ blok }) {
   const lenis = useLenis();
   const marqueeRef = useRef(null);
   const textRef = useRef(null);
@@ -60,7 +60,7 @@ export default function Marquee({ text }) {
   return (
     <div className={styles.marquee} ref={marqueeRef}>
       <div className={styles.marqueeContainer} ref={containerRef}>
-        <h2 ref={textRef}>{text}</h2>
+        <h2 ref={textRef}>{blok.text}</h2>
       </div>
     </div>
   );

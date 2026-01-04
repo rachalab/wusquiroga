@@ -1,13 +1,17 @@
-import Marquee from "@components/blocks/Marquee/Marquee";
-import styles from "./page.module.css";
-import Projects from "@components/structure/Projects/Projects";
+import { getStoryblokApi } from '@/lib/storyblok';
+import { StoryblokStory } from '@storyblok/react/rsc';
 
+export default async function Page() {
+  const { data } = await fetchData();
 
-export default function Home() {
   return (
-    <div className={styles.page}>
-      <Marquee text="« No recuerdo nada por separado »" />
-      <Projects />
-    </div>
+    <StoryblokStory story={data.story} />
   );
+}
+
+
+
+export async function fetchData() {
+  const storyblokApi = getStoryblokApi();
+  return await storyblokApi.get(`cdn/stories/home`, { version: 'draft' });
 }
