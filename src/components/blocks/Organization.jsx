@@ -1,9 +1,8 @@
 import {
-    storyblokEditable,
     StoryblokServerComponent,
 } from '@storyblok/react/rsc';
 
-export default function Page({ blok, story_uuid, story_type }) {
+export default function Organization({ blok, story_uuid, story_type }) {
     return (
         <main>
             {blok.body?.map((nestedBlok) => (

@@ -18,7 +18,7 @@ export default async function Page() {
   const { data } = await fetchData();
 
   return (
-    <StoryblokStory story={data.story} />
+    <StoryblokStory story={data.story} story_type={data.story.content.component} story_uuid={data.story.uuid} />
   );
 }
 

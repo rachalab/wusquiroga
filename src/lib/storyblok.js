@@ -1,5 +1,7 @@
 import { apiPlugin, storyblokInit } from '@storyblok/react/rsc';
 import Page from "../components/blocks/Page";
+import Category from "../components/blocks/Category";
+import Organization from "../components/blocks/Organization";
 import Project from "../components/blocks/Project";
 import Audio from "../components/blocks/Audio/Audio";
 import Video from "../components/blocks/Video/Video";
@@ -21,6 +23,8 @@ import Image from "../components/blocks/Image/Image";
 // Configured later with all components
 export const storyblokComponents = {
     page: Page,
+    category: Category,
+    organization: Organization,
     project: Project,
     audio: Audio,
     video: Video,
