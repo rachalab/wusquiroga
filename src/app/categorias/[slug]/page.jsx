@@ -26,7 +26,6 @@ export default async function Page({ params }) {
 
   const category = data.story;
 
-  console.log("data", data)
 
 
   let breadcrumbHierarchy = [{

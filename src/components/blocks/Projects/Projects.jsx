@@ -6,7 +6,6 @@ import { getStoryblokApi } from '@/lib/storyblok';
 export default async function Projects({ blok, story_uuid, story_type }) {
   let projects = [];
 
-  console.log("story_type", story_type);
   if (blok.fetch === 'all' && story_uuid) {
 
     if (story_type == 'category') {
