@@ -29,8 +29,8 @@ export default async function Page({ params }) {
 
 
   let breadcrumbHierarchy = [{
-    title: "Categorías",
-    url: `/categorias`,
+    title: "Organizaciones",
+    url: `/organizacione`,
     separator: "/"
   }];
 
