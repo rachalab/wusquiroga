@@ -28,7 +28,7 @@ function Sheet({ blok }) {
             ))}
         </div>
 
-        {blok.viewmore && blok.cta && (
+        {blok.view_more && blok.cta && (
           <div className={styles.cta}>
             <button onClick={() => setIsModalOpen(true)}>{blok.cta}</button>
           </div>
@@ -41,7 +41,7 @@ function Sheet({ blok }) {
       >
         <div className={styles.sheetItemsModal}>
           {blok.items?.length > 0 &&
-            items.map((entry, index) => (
+            blok.items?.map((entry, index) => (
               <div key={index} className={styles.sheetItem}>
                 <h5>{entry.title}</h5>
                 <div dangerouslySetInnerHTML={{ __html: renderRichText(entry.text) }} />
@@ -49,7 +49,7 @@ function Sheet({ blok }) {
             ))}
         </div>
       </Modal>
-    </div>
+    </div >
   );
 }
 
