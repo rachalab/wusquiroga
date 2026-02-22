@@ -14,7 +14,7 @@ function Accordions({ blok }) {
 
   return (
     <div {...storyblokEditable(blok)} className={styles.accordions}>
-      {blok.accordion.map((item, index) => {
+      {blok?.accordion.map((item, index) => {
         const isOpen = openIndex === index;
         return (
           <div
@@ -35,10 +35,12 @@ function Accordions({ blok }) {
               className={styles.accordionContent}
               style={{ maxHeight: isOpen ? "1000px" : "0px" }}
             >
-              <div
-                className={styles.accordionText}
-                dangerouslySetInnerHTML={{ __html: renderRichText(item.text) }}
-              />
+              {item?.text && (
+                <div
+                  className={styles.accordionText}
+                  dangerouslySetInnerHTML={{ __html: renderRichText(item?.text) }}
+                />
+              )}
             </div>
           </div>
         );
