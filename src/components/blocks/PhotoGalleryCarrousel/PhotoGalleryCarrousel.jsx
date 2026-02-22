@@ -22,6 +22,7 @@ function PhotoGalleryCarrousel({ blok }) {
         modules={[Navigation]}
         slidesPerView={1.1}
         spaceBetween={"5%"}
+        loop={true}
         navigation={{
           nextEl: `.${styles.next}`,
           prevEl: `.${styles.prev}`,
