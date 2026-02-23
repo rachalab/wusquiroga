@@ -25,6 +25,10 @@
             color: var(--box-fore-color);
         }
     }
+
+    a {
+        color: (--box-fore-color);
+    }
 }
 
 
@@ -88,7 +92,7 @@
     font-size: $font-size-small;
     text-decoration: underline;
     text-underline-offset: 0.2em;
-    color: $blue;
+    color: var(--box-fore-color);
     transition: all 0.2s ease;
 
     &:hover {

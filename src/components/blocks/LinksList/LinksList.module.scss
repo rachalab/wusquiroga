@@ -10,6 +10,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        color: var(--box-fore-color);
 
         a {
             display: flex;
@@ -17,16 +18,17 @@
             gap: $s4;
             padding: $s4;
 
+
             img {
                 width: 100%;
                 height: auto;
             }
 
             &:hover {
-                background: $white;
+                //    background: $white;
             }
 
-            color: $black;
+            color: var(--box-fore-color);
             text-decoration: none;
 
             span {
@@ -48,12 +50,13 @@
             flex-direction: row;
             gap: $s4;
             padding: $s4;
-
+            color: var(--box-fore-color);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: $black;
+
             text-decoration: none;
+
 
             span {
                 @include link;

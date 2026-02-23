@@ -5,6 +5,8 @@ import colorSchemas from "@styles/colorSchemas.module.scss";
 
 function LinksList({ blok }) {
 
+
+
   return (
     <div {...storyblokEditable(blok)} className={`${styles.links} ${colorSchemas[blok.colorschema]}`}>
       {blok.title && <h3>{blok.title}</h3>}
@@ -21,10 +23,15 @@ function LinksList({ blok }) {
       )}
 
       <ul className={blok.preview ? styles.typeImage : styles.typeText}>
-        {blok?.links?.map((link, index) => (
+        {blok?.links?.map((link, index) =>
+
+
+        (
+
           <li key={index}>
+            {console.log(link)}
             <a
-              href={link.url || link.file}
+              href={link.url || link.file.filename}
               target="_blank"
               rel="noopener noreferrer"
             >
