@@ -74,11 +74,10 @@ function PhotoGallerySlideshow({ blok }) {
       {...storyblokEditable(blok)}
       className={`${styles.gallery} ${colorSchemas[blok.colorschema]}`}
       ref={galleryRef}
-      style={{ height: initialHeight ? `${initialHeight}px` : "auto" }}
     >
       {blok.title && <h3>{blok.title}</h3>}
 
-      <div className={styles.photos}>
+      <div className={styles.photos} style={{ height: initialHeight ? `${initialHeight}px` : "auto" }}>
         {/* Slideshow Image */}
         {currentImage && currentImage.filename && (
           <div className={styles.imageContainer} style={{ position: 'relative', width: '100%', height: '100%' }}>
