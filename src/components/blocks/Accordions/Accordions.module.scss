@@ -1,46 +1,50 @@
 @use '@styles/variables' as *;
 
-.accordions
-{
+.accordions {
     border: 1px solid var(--fore-color);
 }
 
-.accordionItem
-{
+.accordionItem {
     border-top: 1px solid var(--fore-color);
-    &:first-child{
+
+    &:first-child {
         border-top: none;
     }
+
     &.open {
         .accordionContent {
-            max-height: 2000px;
+            max-height: 10000px;
         }
-        .accordionTitle{
+
+        .accordionTitle {
             border-bottom: 1px solid var(--fore-color);
 
         }
-       
+
     }
+
     &.closed {
         .accordionContent {
             max-height: 0;
         }
-        
-         .accordionTitle{
+
+        .accordionTitle {
             border-bottom: 1px solid transparent;
 
         }
 
     }
 }
-.accordionTitle{
-    h4{
+
+.accordionTitle {
+    h4 {
         font-size: $font-size-3;
-        font-weight: bold ;
+        font-weight: bold;
         line-height: 80%;
         letter-spacing: 0;
-        color: var(--fore-color);   
+        color: var(--fore-color);
     }
+
     padding: $s2;
     border: none;
     background-color: transparent;
@@ -48,13 +52,13 @@
     width: 100%;
     text-align: left;
     position: relative;
-    
+
     transition: border .1s ease;
 
-    
-    
-    .icon{
-        
+
+
+    .icon {
+
         position: absolute;
         right: 0;
         top: 0;
@@ -66,9 +70,9 @@
     }
 
 }
-.accordionText
-{
-    color: var(--fore-color);   
+
+.accordionText {
+    color: var(--fore-color);
     padding: $s2;
 }
 

@@ -33,7 +33,7 @@ function Accordions({ blok }) {
             </button>
             <div
               className={styles.accordionContent}
-              style={{ maxHeight: isOpen ? "1000px" : "0px" }}
+              style={{ maxHeight: isOpen ? "5000px" : "0px" }}
             >
               {item?.text && (
                 <div
