@@ -1,0 +1,46 @@
+@use '@styles/variables' as *;
+@use '@styles/mixins' as *;
+
+.connections {
+    @include box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+        border-bottom: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-left: 1px solid var(--box-separator-color);
+
+        li {
+            border-bottom: 1px solid var(--box-separator-color);
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        a {
+            display: block;
+            padding: $s3;
+            text-align: right;
+            color: var(--box-fore-color);
+            text-decoration: none;
+            font-size: $font-size-small;
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+            transition: all 0.2s ease;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

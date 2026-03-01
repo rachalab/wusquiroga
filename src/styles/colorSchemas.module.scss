@@ -1,21 +1,26 @@
 @use './variables' as *;
 
-.primary{
+.primary {
     --box-background-color: #{$blue};
     --box-fore-color: #{$white};
     --box-border-color: #{$blue};
-    --fore-color: #{$white};
+    --box-separator-color: var(--background-color);
+
 }
-.secondary{
+
+.secondary {
     --box-background-color: #{$gray-light};
     --box-fore-color: #{$black};
     --box-border-color: #{$gray-light};
-    --fore-color: #{$black};
+    --box-separator-color: var(--background-color);
+
 }
-.tertiary{
-    --box-background-color: transparent;
-    --box-fore-color: #{$black};
-    --box-border-color: #{$black};
-    --fore-color: #{$black};
+
+.tertiary {
+    --box-background-color: var(--background-color);
+    --box-fore-color: var(--fore-color);
+    --box-border-color: var(--fore-color);
+    --box-separator-color: var(--fore-color);
+
 
 }

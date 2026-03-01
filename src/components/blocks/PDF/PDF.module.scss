@@ -18,7 +18,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #fff;
     }
 
     .controls {
@@ -46,7 +45,7 @@
     }
 
     .PDFDownload {
-        border-top: 1px solid var(--box-border-color);
+        border-top: 1px solid var(--box-separator-color);
         padding: $s5;
         display: flex;
         align-items: center;

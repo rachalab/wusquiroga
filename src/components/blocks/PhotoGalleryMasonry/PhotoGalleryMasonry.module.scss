@@ -25,4 +25,22 @@
         }
 
     }
+
+    .photosRow {
+        column-count: unset;
+        display: flex;
+        flex-wrap: wrap;
+        gap: $s2;
+        padding: $s2;
+
+        .image {
+            width: calc(50% - $s2 / 2);
+            margin-bottom: 0;
+        }
+
+        p {
+            padding: 0;
+            margin-top: $s4;
+        }
+    }
 }

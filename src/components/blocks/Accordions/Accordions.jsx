@@ -3,6 +3,7 @@ import { storyblokEditable, renderRichText } from "@storyblok/react";
 import styles from "./Accordions.module.scss";
 import { useState, useRef, useEffect } from "react";
 import Triangle from "@components/atoms/Triangle/Triangle";
+import colorSchemas from "@styles/colorSchemas.module.scss";
 
 function Accordions({ blok }) {
   const [openIndex, setOpenIndex] = useState(blok.firstOpen ? 0 : null);
@@ -13,13 +14,13 @@ function Accordions({ blok }) {
 
 
   return (
-    <div {...storyblokEditable(blok)} className={styles.accordions}>
+    <div {...storyblokEditable(blok)} className={`${styles.accordions} ${colorSchemas['tertiary']} `}>
       {blok?.accordion.map((item, index) => {
         const isOpen = openIndex === index;
         return (
           <div
             key={index}
-            className={`${styles.accordionItem} ${isOpen ? styles.open : styles.closed}`}
+            className={`${styles.accordionItem} ${isOpen ? styles.open : styles.closed} `}
           >
             <button
               className={styles.accordionTitle}

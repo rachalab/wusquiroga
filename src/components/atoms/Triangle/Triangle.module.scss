@@ -1,12 +1,13 @@
 @use '@styles/variables' as *;
 
-.Triangle{
+.Triangle {
     width: 100%;
     height: auto;
     position: relative;
-    color: var(--fore-color);
+    color: var(--box-fore-color);
     cursor: pointer;
-    div{
+
+    div {
         position: relative;
         width: clamp(48px, 7vw, 7vw);
         height: clamp(48px, 7vw, 7vw);
@@ -15,8 +16,9 @@
         display: flex;
         justify-content: center;
     }
-    span{
-        color: var(--fore-color);
+
+    span {
+        color: var(--box-fore-color);
         font-family: 'g';
         font-size: $font-size-3;
         line-height: 110%;

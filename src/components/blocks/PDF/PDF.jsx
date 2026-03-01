@@ -1,7 +1,7 @@
 "use client";
 
 import { storyblokEditable } from "@storyblok/react";
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -20,9 +20,26 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 function PDF({ blok }) {
 
+  const sheets = parseInt(blok.sheets) === 2 ? 2 : 1;
 
   const [numPages, setNumPages] = useState(null);
   const [pagesToShow, setPagesToShow] = useState(0);
+  const [pageWidth, setPageWidth] = useState(null);
+  const containerRef = useRef(null);
+
+  const updatePageWidth = useCallback(() => {
+    if (containerRef.current) {
+      const containerWidth = containerRef.current.offsetWidth;
+      const currentSheets = window.innerWidth >= 768 ? sheets : 1;
+      setPageWidth(Math.floor(containerWidth / currentSheets));
+    }
+  }, [sheets]);
+
+  useEffect(() => {
+    updatePageWidth();
+    window.addEventListener('resize', updatePageWidth);
+    return () => window.removeEventListener('resize', updatePageWidth);
+  }, [updatePageWidth]);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -59,23 +76,25 @@ function PDF({ blok }) {
             onLoadSuccess={onDocumentLoadSuccess}
             onLoadError={console.error}
             className={styles.pages}
+            inputRef={containerRef}
           >
-            {numPages && (
+            {numPages && pageWidth && (
               <Swiper
                 modules={[Navigation]}
-                spaceBetween={30}
+                spaceBetween={0}
                 slidesPerView={1}
+                breakpoints={sheets == 2 ? {
+                  768: { slidesPerView: 2, slidesPerGroup: 2 },
+                } : {}}
                 navigation={{
                   nextEl: `.${styles.next}`,
                   prevEl: `.${styles.prev}`,
                 }}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
               >
                 {Array.from(new Array(pagesToShow), (_, index) => (
                   <SwiperSlide key={index}>
                     <div className={styles.page}>
-                      <Page pageNumber={index + 1} width="640" />
+                      <Page pageNumber={index + 1} width={pageWidth} />
                     </div>
                   </SwiperSlide>
                 ))}

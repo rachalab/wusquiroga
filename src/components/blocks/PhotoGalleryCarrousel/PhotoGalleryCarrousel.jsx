@@ -1,4 +1,5 @@
 "use client";
+import { useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Triangle from "@components/atoms/Triangle/Triangle";
@@ -6,7 +7,18 @@ import styles from "./PhotoGalleryCarrousel.module.scss";
 import colorSchemas from "@styles/colorSchemas.module.scss";
 import { storyblokEditable } from "@storyblok/react";
 
+function syncHeight(swiper) {
+  const activeSlide = swiper.slides[swiper.activeIndex];
+  if (activeSlide) {
+    swiper.el.style.height = `${activeSlide.scrollHeight}px`;
+  }
+}
+
 function PhotoGalleryCarrousel({ blok }) {
+  const handleReady = useCallback((swiper) => {
+    syncHeight(swiper);
+  }, []);
+
   return (
     <div {...storyblokEditable(blok)} className={`${styles.gallery} ${colorSchemas[blok?.colorschema]}`}>
       <h3>{blok.title}</h3>
@@ -27,8 +39,8 @@ function PhotoGalleryCarrousel({ blok }) {
           nextEl: `.${styles.next}`,
           prevEl: `.${styles.prev}`,
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        onImagesReady={handleReady}
+        onSlideChangeTransitionStart={syncHeight}
       >
         {blok.images?.map((img, index) => {
           const epigraph = img.title ? img.title.split(":") : [];
@@ -58,3 +70,4 @@ function PhotoGalleryCarrousel({ blok }) {
 }
 
 export default PhotoGalleryCarrousel;
+

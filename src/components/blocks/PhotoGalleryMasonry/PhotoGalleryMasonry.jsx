@@ -5,11 +5,13 @@ import { storyblokEditable } from "@storyblok/react";
 
 function PhotoGalleryMasonry({ blok }) {
   let epigraph = "";
+  const isRow = blok?.order === "row";
+
   return (
     <div {...storyblokEditable(blok)} className={`${styles.gallery} ${colorSchemas[blok?.colorschema]}`}>
       {blok?.title && <h3 className={styles.title}>{blok.title}</h3>}
 
-      <div className={styles.photos}>
+      <div className={`${styles.photos} ${isRow ? styles.photosRow : ""}`}>
         {blok?.images?.map((img, index) => {
 
           const epigraph = img.title ? img.title.split(":") : [];

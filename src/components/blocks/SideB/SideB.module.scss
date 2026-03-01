@@ -3,6 +3,9 @@
 .sideB {
     --fore-color: #{$white};
     --background-color: #{$black};
+
+
+
     padding: $s1;
     background: var(--background-color);
     gap: $s1;

@@ -74,6 +74,26 @@
 .accordionText {
     color: var(--fore-color);
     padding: $s2;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: $font-size-small !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        margin-bottom: $s4 !important;
+        margin-top: $s1 !important;
+        font-family: var(--font-chivo);
+
+        &:first-child {
+            margin-top: 0 !important;
+        }
+    }
+
+
 }
 
 .accordionContent {

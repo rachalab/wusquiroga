@@ -5,7 +5,7 @@
     @include box;
 
     h3 {
-        border-bottom: 1px solid var(--fore-color);
+        border-bottom: 1px solid var(--box-separator-color);
     }
 }
 
@@ -24,7 +24,7 @@
         p {
             font-size: $font-size-small;
             line-height: 120%;
-            color: var(--fore-color);
+            color: var(--box-fore-color);
             padding: 0 !important;
             letter-spacing: normal !important;
             line-height: 120%;
@@ -38,7 +38,7 @@
             text-transform: uppercase;
             font-weight: bold;
             margin-bottom: $s4;
-            color: var(--fore-color);
+            color: var(--box-fore-color);
             letter-spacing: normal !important;
             line-height: 120%;
 
@@ -54,17 +54,6 @@
     padding: $s2;
 }
 
-
-.showMoreButton {
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 1rem;
-}
 
 
 .modalItems {
@@ -85,7 +74,7 @@
 
 .cta {
 
-    border-left: 1px solid var(--fore-color);
+    border-left: 1px solid var(--box-separator-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,12 +85,14 @@
         background: transparent;
         font-family: var(--chivo);
         font-size: $font-size-small;
-        color: var(--fore-color);
+        color: var(--box-fore-color);
         text-transform: uppercase;
         text-align: center;
+        text-decoration: underline;
 
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
+
         }
     }
 }

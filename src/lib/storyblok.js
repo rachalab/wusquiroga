@@ -19,6 +19,7 @@ import Accordions from "../components/blocks/Accordions/Accordions";
 import SideA from "../components/blocks/SideA/SideA";
 import SideB from "../components/blocks/SideB/SideB";
 import Image from "../components/blocks/Image/Image";
+import Connections from "../components/blocks/Connections/Connections";
 
 // Configured later with all components
 export const storyblokComponents = {
@@ -42,6 +43,7 @@ export const storyblokComponents = {
     image: Image,
     projects: Projects,
     marquee: Marquee,
+    connections: Connections,
 };
 
 

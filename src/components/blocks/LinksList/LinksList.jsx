@@ -29,7 +29,6 @@ function LinksList({ blok }) {
         (
 
           <li key={index}>
-            {console.log(link)}
             <a
               href={link.url || link.file.filename}
               target="_blank"
@@ -40,7 +39,7 @@ function LinksList({ blok }) {
               )}
               {link.title}
               <br />
-              <span>Descargar</span>
+              <span>{link.cta ? link.cta : "Descargar"}</span>
             </a>
           </li>
         ))}

@@ -5,32 +5,32 @@
   --background-color: $white;
   --box-background-color: $blue;
   --box-fore-color: $white;
-  
+
 }
 
 @font-face {
-    font-family: 'g';
-    src: url('/fonts/g_regular.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display:block;
+  font-family: 'g';
+  src: url('/fonts/g_regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
 }
 
 
 @font-face {
-    font-family: 'g';
-    src: url('/fonts/g_medium.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-    font-display:block;
+  font-family: 'g';
+  src: url('/fonts/g_medium.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
 }
 
 @font-face {
-    font-family: 'g';
-    src: url('/fonts/g_black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display:block;
+  font-family: 'g';
+  src: url('/fonts/g_black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
 }
 
 
@@ -48,7 +48,13 @@ body {
 
 
 
-h1,h2,h3,h4,h5,h6,blockquote{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote {
   font-family: 'g';
   margin: 0;
   padding: 0;
@@ -59,59 +65,35 @@ h1,h2,h3,h4,h5,h6,blockquote{
 
 
 
-h1{
+h1 {
   font-size: $font-size-1;
   line-height: 80%;
   margin: 0 0 $s1 0;
 }
-p{
-  
-    font-size: $font-size-normal;
-    line-height: 150%;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
+
+p {
+
+  font-size: $font-size-normal;
+  line-height: 150%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 
 }
-strong{
+
+strong {
   font-weight: 700;
 }
-.builder-blocks
-{
+
+.builder-blocks {
 
   gap: $s2;
 
 
 }
 
-.builder-block
-{
+.builder-block {
   margin: 0 !important;
   padding: 0 !important;
   min-height: 0 !important;
-}
-
-.rhap_rewind-button,.rhap_forward-button,  .rhap_additional-controls,.rhap_volume-controls,.rhap_current-time,.rhap_time{
-  display: none !important;
-}
-.rhap_container{
-  background: $blue !important;
-  path,fill{
-    fill: $white !important;
-
-  }
-.rhap_current-time{
-    color: $white !important;
-  }
-   .rhap_progress-indicator,.rhap_progress-filled{
-    background-color: $white !important;
-  }
-  .rhap_controls-section
-  {
-  flex:  0 0 auto;
-  }
-  .rhap_progress-section
-  {
-    flex: 1 0 0 ;
-  }
 }

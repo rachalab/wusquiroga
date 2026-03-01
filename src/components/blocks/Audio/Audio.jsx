@@ -13,12 +13,14 @@ function Audio({ blok }) {
       <p>
         <strong>{blok?.line1}</strong> {blok?.line2}
       </p>
-      <AudioPlayer
-        autoPlay={false} // Default to false instead of autoPlay boolean to avoid noise
-        src={blok?.mp3?.filename}
-        className={styles.player}
-        layout="horizontal-reverse"
-      />{" "}
+      {blok?.mp3?.filename && (
+        <AudioPlayer
+          autoPlay={false} // Default to false instead of autoPlay boolean to avoid noise
+          src={blok?.mp3?.filename}
+          className={styles.player}
+          layout="horizontal-reverse"
+        />
+      )}
     </div>
   );
 }

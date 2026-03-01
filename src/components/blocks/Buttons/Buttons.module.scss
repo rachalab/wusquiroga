@@ -41,11 +41,11 @@
 
             border: 1px solid $blue;
             color: $blue;
-            background-color: $white;
+            background-color: transparent;
 
             &:hover {
-                color: $blue;
-                background-color: $white;
+                color: #{$white};
+                background-color: #{$blue};
             }
 
         }
@@ -53,9 +53,9 @@
         &.tertiary {
 
 
-            border: 1px solid $white;
-            color: $blue;
-            background-color: $white;
+            border: 1px solid var(--background-color);
+            color: #{$blue};
+            background-color: transparent;
 
             &:hover {
                 text-decoration: none;

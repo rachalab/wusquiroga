@@ -1,34 +1,66 @@
 @use '@styles/variables' as *;
 @use '@styles/mixins' as *;
 
-.embed{
+.embed {
     @include box;
-    h3{
+
+    h3 {
         position: relative;
     }
-    img{
+
+    img {
         width: 100%;
-       
+
     }
-    .pages{
+
+    .iframeWrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+
+    .pages {
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid #fff;
     }
 
-    .controls{
+    .controls {
         position: absolute;
         right: $s5;
         top: $s5;
         display: flex;
-        --fore-color:  #{$white};
-        
+        --fore-color: #{$white};
+
     }
-    .page{
+
+    .page {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
+    .download {
+        border-top: 1px solid var(--box-separator-color);
+        padding: $s5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            @include link;
+        }
+
+    }
+
 }

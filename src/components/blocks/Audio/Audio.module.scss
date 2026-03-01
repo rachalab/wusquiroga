@@ -1,10 +1,56 @@
 @use '@styles/variables' as *;
 @use '@styles/mixins' as *;
 
-.audio
-{
+.audio {
     @include box;
 
+    .player {
+        border-top: 1px solid var(--box-separator-color);
+    }
 
-  
+    :global(.rhap_rewind-button),
+    :global(.rhap_forward-button),
+    :global(.rhap_additional-controls),
+    :global(.rhap_volume-controls),
+    :global(.rhap_current-time),
+    :global(.rhap_time) {
+        display: none !important;
+    }
+
+    :global(.rhap_container) {
+        background: var(--box-background-color) !important;
+
+        :global(.rhap_progress-bar) {
+            background: var(--box-fore-color) !important;
+            border-radius: 0;
+            height: 1px;
+        }
+
+        path,
+        fill {
+            fill: var(--box-fore-color) !important;
+        }
+
+        :global(.rhap_current-time) {
+            color: var(--box-fore-color) !important;
+        }
+
+        :global(.rhap_progress-indicator) {
+            top: -10px;
+        }
+
+        :global(.rhap_progress-indicator),
+        :global(.rhap_progress-filled) {
+            background-color: var(--box-fore-color) !important;
+            box-shadow: none;
+        }
+
+        :global(.rhap_controls-section) {
+            flex: 0 0 auto;
+        }
+
+        :global(.rhap_progress-section) {
+            flex: 1 0 0;
+        }
+    }
 }

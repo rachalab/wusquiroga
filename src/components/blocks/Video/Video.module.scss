@@ -1,46 +1,108 @@
 @use '@styles/variables' as *;
 @use '@styles/mixins' as *;
 
-.video
-{
+.video {
     @include box;
 
-    &.horizontal .videoWrapper 
-    {
+    box-sizing: border-box;
+
+    &.horizontal .videoWrapper {
         aspect-ratio: 16 / 9;
-        width: 100%;
+        width: calc(100% - 2px);
         position: relative;
     }
 
-    &.vertical .videoWrapper 
-    {
+    &.vertical .videoWrapper {
         aspect-ratio: 9 / 16;
         position: relative;
-        width: 100%;
+        width: calc(100% - 2px);
         max-width: 400px;
 
     }
+
     .videoFrame {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+
     }
 
-    &.vertical{
+    &.vertical {
         display: flex;
         flex-direction: row-reverse;
-        
-        .description p
-        {
-            border-bottom: 1px solid $white;
+
+        .videoFrame {
+            border-left: 1px solid var(--box-separator-color);
+        }
+
+        .description p {
+            border-bottom: 1px solid var(--box-separator-color);
         }
     }
 
-    
+    &.horizontal {
 
-    .description{
+
+        .description p {
+            border-top: 1px solid var(--box-separator-color);
+        }
+    }
+
+    // Preview with play button
+    .previewContainer {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: #000;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .previewImage {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .playButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background-color: var(--box-background-color);
+        transition: transform 0.2s ease;
+
+        // Triangle
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 54%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12px 0 12px 22px;
+            border-color: transparent transparent transparent var(--box-separator-color);
+        }
+    }
+
+    .previewContainer:hover .playButton {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .description {
         width: 100%;
     }
 }
