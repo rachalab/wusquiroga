@@ -20,12 +20,35 @@
 
 }
 
+.wContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: $s1;
+  height: clamp(90px, 11.75vw, 11.75vw);
+  transform: translateX(-10vw);
+
+  .w {
+    opacity: 1;
+    top: $s4;
+    line-height: 80%;
+    left: 0;
+    text-align: center;
+    font-size: $font-size-3;
+    font-family: 'g';
+    font-weight: 700;
+    position: absolute;
+    width: $s1;
+    color: $blue;
+  }
+}
+
 .navigationButton {
   color: $blue;
   position: fixed;
   top: 0;
-  left: 0;
-  padding: 1rem;
+  right: 0;
   z-index: 1000;
   width: $s1;
   height: clamp(90px, 11.75vw, 11.75vw);
@@ -35,45 +58,26 @@
   padding: 0;
   cursor: pointer;
 
-  .w {
-    opacity: 1;
-    top: $s4;
-    transform: translateX(-10vw);
-    line-height: 80%;
-    left: 0;
-    text-align: center;
-    font-size: $font-size-3;
-    font-family: 'g';
-    font-weight: 700;
-    position: absolute;
-    width: $s1;
-  }
-
   .hamburgerLine {
     background-color: $blue;
     width: auto;
     height: clamp(4px, .5vw, .5vw);
-    ;
     position: absolute;
     left: clamp(4px, 1vw, 1vw);
-    ;
     right: clamp(4px, 1vw, 1vw);
-    ;
-    bottom: 0;
+  }
 
+  .hamburgerLine:nth-child(1) {
+    top: $s4;
   }
 
   .hamburgerLine:nth-child(2) {
-    bottom: clamp(8px, 1vw, 1vw);
-    ;
+    top: calc($s4 + clamp(8px, 1vw, 1vw));
   }
 
   .hamburgerLine:nth-child(3) {
-    bottom: clamp(16px, 2vw, 2vw);
-    ;
+    top: calc($s4 + clamp(16px, 2vw, 2vw));
   }
-
-
 }
 
 .navigationOverlay {

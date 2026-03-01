@@ -92,15 +92,19 @@ export default function Navigation({ menuData }) {
         </h1>
       </header>
 
-      {/* Botón hamburguesa para abrir menú */}
-      <button className={styles.navigationButton} onClick={toggleMenu}>
-        <span className={styles.w} ref={menuWRef}>
-          W
-        </span>
-        <span className={styles.hamburgerLine}></span>
-        <span className={styles.hamburgerLine}></span>
-        <span className={styles.hamburgerLine}></span>
-      </button>
+      {/* Logo W fijo a la izquierda */}
+      <div className={styles.wContainer} ref={menuWRef}>
+        <Link href="/"><span className={styles.w}>W</span></Link>
+      </div>
+
+      {/* Botón hamburguesa a la derecha */}
+      {!isOpen && (
+        <button className={styles.navigationButton} onClick={toggleMenu}>
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+        </button>
+      )}
 
       {/* Overlay del menú, animado con GSAP */}
       <div
